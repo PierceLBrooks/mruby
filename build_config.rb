@@ -10,25 +10,19 @@ MRuby::Build.new do |conf|
 
   enable_debug
 
-  conf.cc do |cc|
-    cc.defines = %w(DISABLE_GEMS)
-  end
+  conf.gembox 'default'
 end
 
 # Requires Android NDK r13 or later.
-MRuby::CrossBuild.new('android-armeabi-v7a-neon-hard') do |conf|
+MRuby::CrossBuild.new('android-armeabi-v7a') do |conf|
   params = {
     :arch => 'armeabi-v7a',
-    :mfpu => 'neon',
-    :mfloat_abi => 'hard',
     :platform => 'android-24',
     :toolchain => :clang,
   }
   toolchain :android, params
 
-  conf.cc do |cc|
-    cc.defines = %w(DISABLE_GEMS)
-  end
+  conf.gembox 'android'
 end
 
 # Requires Android NDK r13 or later.
@@ -40,9 +34,7 @@ MRuby::CrossBuild.new('android-arm64-v8a') do |conf|
   }
   toolchain :android, params
 
-  conf.cc do |cc|
-    cc.defines = %w(DISABLE_GEMS)
-  end
+  conf.gembox 'android'
 end
 
 

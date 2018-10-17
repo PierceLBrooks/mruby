@@ -68,7 +68,7 @@
 /* Copy the first part of user declarations.  */
 
 /* Line 189 of yacc.c  */
-#line 7 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 7 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
 
 #undef PARSER_DEBUG
 #ifdef PARSER_DEBUG
@@ -1153,7 +1153,7 @@ heredoc_end(parser_state *p)
 
 
 /* Line 189 of yacc.c  */
-#line 1157 "E:/UserData/Programming/Ruby/MRuby/mruby/build/host/mrbgems/mruby-compiler/core/y.tab.c"
+#line 1157 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/build/host/mrbgems/mruby-compiler/core/y.tab.c"
 
 /* Enabling traces.  */
 #ifndef YYDEBUG
@@ -1307,7 +1307,7 @@ typedef union YYSTYPE
 {
 
 /* Line 214 of yacc.c  */
-#line 1094 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1094 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
 
     node *nd;
     mrb_sym id;
@@ -1318,7 +1318,7 @@ typedef union YYSTYPE
 
 
 /* Line 214 of yacc.c  */
-#line 1322 "E:/UserData/Programming/Ruby/MRuby/mruby/build/host/mrbgems/mruby-compiler/core/y.tab.c"
+#line 1322 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/build/host/mrbgems/mruby-compiler/core/y.tab.c"
 } YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
@@ -1330,7 +1330,7 @@ typedef union YYSTYPE
 
 
 /* Line 264 of yacc.c  */
-#line 1334 "E:/UserData/Programming/Ruby/MRuby/mruby/build/host/mrbgems/mruby-compiler/core/y.tab.c"
+#line 1334 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/build/host/mrbgems/mruby-compiler/core/y.tab.c"
 
 #ifdef short
 # undef short
@@ -5694,7 +5694,7 @@ yyreduce:
         case 2:
 
 /* Line 1455 of yacc.c  */
-#line 1251 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1251 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       p->lstate = EXPR_BEG;
                       if (!p->locals) p->locals = cons(0,0);
@@ -5704,7 +5704,7 @@ yyreduce:
   case 3:
 
 /* Line 1455 of yacc.c  */
-#line 1256 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1256 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       p->tree = new_scope(p, (yyvsp[(2) - (2)].nd));
                       NODE_LINENO(p->tree, (yyvsp[(2) - (2)].nd));
@@ -5714,7 +5714,7 @@ yyreduce:
   case 4:
 
 /* Line 1455 of yacc.c  */
-#line 1263 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1263 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(1) - (2)].nd);
                     ;}
@@ -5723,7 +5723,7 @@ yyreduce:
   case 5:
 
 /* Line 1455 of yacc.c  */
-#line 1269 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1269 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_begin(p, 0);
                     ;}
@@ -5732,7 +5732,7 @@ yyreduce:
   case 6:
 
 /* Line 1455 of yacc.c  */
-#line 1273 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1273 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_begin(p, (yyvsp[(1) - (1)].nd));
                       NODE_LINENO((yyval.nd), (yyvsp[(1) - (1)].nd));
@@ -5742,7 +5742,7 @@ yyreduce:
   case 7:
 
 /* Line 1455 of yacc.c  */
-#line 1278 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1278 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = push((yyvsp[(1) - (3)].nd), newline_node((yyvsp[(3) - (3)].nd)));
                     ;}
@@ -5751,7 +5751,7 @@ yyreduce:
   case 8:
 
 /* Line 1455 of yacc.c  */
-#line 1282 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1282 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_begin(p, 0);
                     ;}
@@ -5760,7 +5760,7 @@ yyreduce:
   case 10:
 
 /* Line 1455 of yacc.c  */
-#line 1289 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1289 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = local_switch(p);
                     ;}
@@ -5769,7 +5769,7 @@ yyreduce:
   case 11:
 
 /* Line 1455 of yacc.c  */
-#line 1293 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1293 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       yyerror(p, "BEGIN not supported");
                       local_resume(p, (yyvsp[(2) - (5)].nd));
@@ -5780,7 +5780,7 @@ yyreduce:
   case 12:
 
 /* Line 1455 of yacc.c  */
-#line 1304 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1304 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       if ((yyvsp[(2) - (4)].nd)) {
                         (yyval.nd) = new_rescue(p, (yyvsp[(1) - (4)].nd), (yyvsp[(2) - (4)].nd), (yyvsp[(3) - (4)].nd));
@@ -5807,7 +5807,7 @@ yyreduce:
   case 13:
 
 /* Line 1455 of yacc.c  */
-#line 1328 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1328 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(1) - (2)].nd);
                     ;}
@@ -5816,7 +5816,7 @@ yyreduce:
   case 14:
 
 /* Line 1455 of yacc.c  */
-#line 1334 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1334 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_begin(p, 0);
                     ;}
@@ -5825,7 +5825,7 @@ yyreduce:
   case 15:
 
 /* Line 1455 of yacc.c  */
-#line 1338 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1338 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_begin(p, (yyvsp[(1) - (1)].nd));
                       NODE_LINENO((yyval.nd), (yyvsp[(1) - (1)].nd));
@@ -5835,7 +5835,7 @@ yyreduce:
   case 16:
 
 /* Line 1455 of yacc.c  */
-#line 1343 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1343 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = push((yyvsp[(1) - (3)].nd), newline_node((yyvsp[(3) - (3)].nd)));
                     ;}
@@ -5844,7 +5844,7 @@ yyreduce:
   case 17:
 
 /* Line 1455 of yacc.c  */
-#line 1347 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1347 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_begin(p, (yyvsp[(2) - (2)].nd));
                     ;}
@@ -5853,14 +5853,14 @@ yyreduce:
   case 18:
 
 /* Line 1455 of yacc.c  */
-#line 1352 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1352 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {p->lstate = EXPR_FNAME;;}
     break;
 
   case 19:
 
 /* Line 1455 of yacc.c  */
-#line 1353 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1353 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_alias(p, (yyvsp[(2) - (4)].id), (yyvsp[(4) - (4)].id));
                     ;}
@@ -5869,7 +5869,7 @@ yyreduce:
   case 20:
 
 /* Line 1455 of yacc.c  */
-#line 1357 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1357 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(2) - (2)].nd);
                     ;}
@@ -5878,7 +5878,7 @@ yyreduce:
   case 21:
 
 /* Line 1455 of yacc.c  */
-#line 1361 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1361 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_if(p, cond((yyvsp[(3) - (3)].nd)), (yyvsp[(1) - (3)].nd), 0);
                     ;}
@@ -5887,7 +5887,7 @@ yyreduce:
   case 22:
 
 /* Line 1455 of yacc.c  */
-#line 1365 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1365 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_unless(p, cond((yyvsp[(3) - (3)].nd)), (yyvsp[(1) - (3)].nd), 0);
                     ;}
@@ -5896,7 +5896,7 @@ yyreduce:
   case 23:
 
 /* Line 1455 of yacc.c  */
-#line 1369 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1369 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_while(p, cond((yyvsp[(3) - (3)].nd)), (yyvsp[(1) - (3)].nd));
                     ;}
@@ -5905,7 +5905,7 @@ yyreduce:
   case 24:
 
 /* Line 1455 of yacc.c  */
-#line 1373 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1373 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_until(p, cond((yyvsp[(3) - (3)].nd)), (yyvsp[(1) - (3)].nd));
                     ;}
@@ -5914,7 +5914,7 @@ yyreduce:
   case 25:
 
 /* Line 1455 of yacc.c  */
-#line 1377 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1377 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_mod_rescue(p, (yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -5923,7 +5923,7 @@ yyreduce:
   case 26:
 
 /* Line 1455 of yacc.c  */
-#line 1381 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1381 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       yyerror(p, "END not supported");
                       (yyval.nd) = new_postexe(p, (yyvsp[(3) - (4)].nd));
@@ -5933,7 +5933,7 @@ yyreduce:
   case 28:
 
 /* Line 1455 of yacc.c  */
-#line 1387 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1387 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_masgn(p, (yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -5942,7 +5942,7 @@ yyreduce:
   case 29:
 
 /* Line 1455 of yacc.c  */
-#line 1391 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1391 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_asgn(p, (yyvsp[(1) - (3)].nd), new_array(p, (yyvsp[(3) - (3)].nd)));
                     ;}
@@ -5951,7 +5951,7 @@ yyreduce:
   case 30:
 
 /* Line 1455 of yacc.c  */
-#line 1395 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1395 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_masgn(p, (yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -5960,7 +5960,7 @@ yyreduce:
   case 31:
 
 /* Line 1455 of yacc.c  */
-#line 1399 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1399 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_masgn(p, (yyvsp[(1) - (3)].nd), new_array(p, (yyvsp[(3) - (3)].nd)));
                     ;}
@@ -5969,7 +5969,7 @@ yyreduce:
   case 33:
 
 /* Line 1455 of yacc.c  */
-#line 1406 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1406 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_asgn(p, (yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -5978,7 +5978,7 @@ yyreduce:
   case 34:
 
 /* Line 1455 of yacc.c  */
-#line 1410 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1410 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_op_asgn(p, (yyvsp[(1) - (3)].nd), (yyvsp[(2) - (3)].id), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -5987,7 +5987,7 @@ yyreduce:
   case 35:
 
 /* Line 1455 of yacc.c  */
-#line 1414 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1414 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_op_asgn(p, new_call(p, (yyvsp[(1) - (6)].nd), intern("[]",2), (yyvsp[(3) - (6)].nd), '.'), (yyvsp[(5) - (6)].id), (yyvsp[(6) - (6)].nd));
                     ;}
@@ -5996,7 +5996,7 @@ yyreduce:
   case 36:
 
 /* Line 1455 of yacc.c  */
-#line 1418 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1418 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_op_asgn(p, new_call(p, (yyvsp[(1) - (5)].nd), (yyvsp[(3) - (5)].id), 0, (yyvsp[(2) - (5)].num)), (yyvsp[(4) - (5)].id), (yyvsp[(5) - (5)].nd));
                     ;}
@@ -6005,7 +6005,7 @@ yyreduce:
   case 37:
 
 /* Line 1455 of yacc.c  */
-#line 1422 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1422 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_op_asgn(p, new_call(p, (yyvsp[(1) - (5)].nd), (yyvsp[(3) - (5)].id), 0, (yyvsp[(2) - (5)].num)), (yyvsp[(4) - (5)].id), (yyvsp[(5) - (5)].nd));
                     ;}
@@ -6014,7 +6014,7 @@ yyreduce:
   case 38:
 
 /* Line 1455 of yacc.c  */
-#line 1426 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1426 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       yyerror(p, "constant re-assignment");
                       (yyval.nd) = 0;
@@ -6024,7 +6024,7 @@ yyreduce:
   case 39:
 
 /* Line 1455 of yacc.c  */
-#line 1431 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1431 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_op_asgn(p, new_call(p, (yyvsp[(1) - (5)].nd), (yyvsp[(3) - (5)].id), 0, tCOLON2), (yyvsp[(4) - (5)].id), (yyvsp[(5) - (5)].nd));
                     ;}
@@ -6033,7 +6033,7 @@ yyreduce:
   case 40:
 
 /* Line 1455 of yacc.c  */
-#line 1435 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1435 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       backref_error(p, (yyvsp[(1) - (3)].nd));
                       (yyval.nd) = new_begin(p, 0);
@@ -6043,7 +6043,7 @@ yyreduce:
   case 42:
 
 /* Line 1455 of yacc.c  */
-#line 1443 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1443 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_mod_rescue(p, (yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -6052,7 +6052,7 @@ yyreduce:
   case 45:
 
 /* Line 1455 of yacc.c  */
-#line 1452 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1452 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_and(p, (yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -6061,7 +6061,7 @@ yyreduce:
   case 46:
 
 /* Line 1455 of yacc.c  */
-#line 1456 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1456 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_or(p, (yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -6070,7 +6070,7 @@ yyreduce:
   case 47:
 
 /* Line 1455 of yacc.c  */
-#line 1460 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1460 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_uni_op(p, cond((yyvsp[(3) - (3)].nd)), "!");
                     ;}
@@ -6079,7 +6079,7 @@ yyreduce:
   case 48:
 
 /* Line 1455 of yacc.c  */
-#line 1464 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1464 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_uni_op(p, cond((yyvsp[(2) - (2)].nd)), "!");
                     ;}
@@ -6088,7 +6088,7 @@ yyreduce:
   case 50:
 
 /* Line 1455 of yacc.c  */
-#line 1471 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1471 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       if (!(yyvsp[(1) - (1)].nd)) (yyval.nd) = new_nil(p);
                       else {
@@ -6100,7 +6100,7 @@ yyreduce:
   case 54:
 
 /* Line 1455 of yacc.c  */
-#line 1485 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1485 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_call(p, (yyvsp[(1) - (4)].nd), (yyvsp[(3) - (4)].id), (yyvsp[(4) - (4)].nd), (yyvsp[(2) - (4)].num));
                     ;}
@@ -6109,7 +6109,7 @@ yyreduce:
   case 55:
 
 /* Line 1455 of yacc.c  */
-#line 1491 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1491 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       local_nest(p);
                     ;}
@@ -6118,7 +6118,7 @@ yyreduce:
   case 56:
 
 /* Line 1455 of yacc.c  */
-#line 1497 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1497 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_block(p, (yyvsp[(3) - (5)].nd), (yyvsp[(4) - (5)].nd));
                       local_unnest(p);
@@ -6128,7 +6128,7 @@ yyreduce:
   case 57:
 
 /* Line 1455 of yacc.c  */
-#line 1504 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1504 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_fcall(p, (yyvsp[(1) - (2)].id), (yyvsp[(2) - (2)].nd));
                     ;}
@@ -6137,7 +6137,7 @@ yyreduce:
   case 58:
 
 /* Line 1455 of yacc.c  */
-#line 1508 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1508 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       args_with_block(p, (yyvsp[(2) - (3)].nd), (yyvsp[(3) - (3)].nd));
                       (yyval.nd) = new_fcall(p, (yyvsp[(1) - (3)].id), (yyvsp[(2) - (3)].nd));
@@ -6147,7 +6147,7 @@ yyreduce:
   case 59:
 
 /* Line 1455 of yacc.c  */
-#line 1513 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1513 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_call(p, (yyvsp[(1) - (4)].nd), (yyvsp[(3) - (4)].id), (yyvsp[(4) - (4)].nd), (yyvsp[(2) - (4)].num));
                     ;}
@@ -6156,7 +6156,7 @@ yyreduce:
   case 60:
 
 /* Line 1455 of yacc.c  */
-#line 1517 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1517 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       args_with_block(p, (yyvsp[(4) - (5)].nd), (yyvsp[(5) - (5)].nd));
                       (yyval.nd) = new_call(p, (yyvsp[(1) - (5)].nd), (yyvsp[(3) - (5)].id), (yyvsp[(4) - (5)].nd), (yyvsp[(2) - (5)].num));
@@ -6166,7 +6166,7 @@ yyreduce:
   case 61:
 
 /* Line 1455 of yacc.c  */
-#line 1522 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1522 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_call(p, (yyvsp[(1) - (4)].nd), (yyvsp[(3) - (4)].id), (yyvsp[(4) - (4)].nd), tCOLON2);
                     ;}
@@ -6175,7 +6175,7 @@ yyreduce:
   case 62:
 
 /* Line 1455 of yacc.c  */
-#line 1526 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1526 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       args_with_block(p, (yyvsp[(4) - (5)].nd), (yyvsp[(5) - (5)].nd));
                       (yyval.nd) = new_call(p, (yyvsp[(1) - (5)].nd), (yyvsp[(3) - (5)].id), (yyvsp[(4) - (5)].nd), tCOLON2);
@@ -6185,7 +6185,7 @@ yyreduce:
   case 63:
 
 /* Line 1455 of yacc.c  */
-#line 1531 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1531 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_super(p, (yyvsp[(2) - (2)].nd));
                     ;}
@@ -6194,7 +6194,7 @@ yyreduce:
   case 64:
 
 /* Line 1455 of yacc.c  */
-#line 1535 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1535 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_yield(p, (yyvsp[(2) - (2)].nd));
                     ;}
@@ -6203,7 +6203,7 @@ yyreduce:
   case 65:
 
 /* Line 1455 of yacc.c  */
-#line 1539 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1539 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_return(p, ret_args(p, (yyvsp[(2) - (2)].nd)));
                     ;}
@@ -6212,7 +6212,7 @@ yyreduce:
   case 66:
 
 /* Line 1455 of yacc.c  */
-#line 1543 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1543 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_break(p, ret_args(p, (yyvsp[(2) - (2)].nd)));
                     ;}
@@ -6221,7 +6221,7 @@ yyreduce:
   case 67:
 
 /* Line 1455 of yacc.c  */
-#line 1547 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1547 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_next(p, ret_args(p, (yyvsp[(2) - (2)].nd)));
                     ;}
@@ -6230,7 +6230,7 @@ yyreduce:
   case 68:
 
 /* Line 1455 of yacc.c  */
-#line 1553 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1553 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(1) - (1)].nd);
                     ;}
@@ -6239,7 +6239,7 @@ yyreduce:
   case 69:
 
 /* Line 1455 of yacc.c  */
-#line 1557 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1557 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(2) - (3)].nd);
                     ;}
@@ -6248,7 +6248,7 @@ yyreduce:
   case 71:
 
 /* Line 1455 of yacc.c  */
-#line 1564 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1564 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(2) - (3)].nd);
                     ;}
@@ -6257,7 +6257,7 @@ yyreduce:
   case 72:
 
 /* Line 1455 of yacc.c  */
-#line 1570 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1570 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list1((yyvsp[(1) - (1)].nd));
                     ;}
@@ -6266,7 +6266,7 @@ yyreduce:
   case 73:
 
 /* Line 1455 of yacc.c  */
-#line 1574 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1574 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list1(push((yyvsp[(1) - (2)].nd),(yyvsp[(2) - (2)].nd)));
                     ;}
@@ -6275,7 +6275,7 @@ yyreduce:
   case 74:
 
 /* Line 1455 of yacc.c  */
-#line 1578 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1578 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list2((yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -6284,7 +6284,7 @@ yyreduce:
   case 75:
 
 /* Line 1455 of yacc.c  */
-#line 1582 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1582 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list3((yyvsp[(1) - (5)].nd), (yyvsp[(3) - (5)].nd), (yyvsp[(5) - (5)].nd));
                     ;}
@@ -6293,7 +6293,7 @@ yyreduce:
   case 76:
 
 /* Line 1455 of yacc.c  */
-#line 1586 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1586 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list2((yyvsp[(1) - (2)].nd), new_nil(p));
                     ;}
@@ -6302,7 +6302,7 @@ yyreduce:
   case 77:
 
 /* Line 1455 of yacc.c  */
-#line 1590 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1590 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list3((yyvsp[(1) - (4)].nd), new_nil(p), (yyvsp[(4) - (4)].nd));
                     ;}
@@ -6311,7 +6311,7 @@ yyreduce:
   case 78:
 
 /* Line 1455 of yacc.c  */
-#line 1594 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1594 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list2(0, (yyvsp[(2) - (2)].nd));
                     ;}
@@ -6320,7 +6320,7 @@ yyreduce:
   case 79:
 
 /* Line 1455 of yacc.c  */
-#line 1598 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1598 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list3(0, (yyvsp[(2) - (4)].nd), (yyvsp[(4) - (4)].nd));
                     ;}
@@ -6329,7 +6329,7 @@ yyreduce:
   case 80:
 
 /* Line 1455 of yacc.c  */
-#line 1602 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1602 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list2(0, new_nil(p));
                     ;}
@@ -6338,7 +6338,7 @@ yyreduce:
   case 81:
 
 /* Line 1455 of yacc.c  */
-#line 1606 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1606 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list3(0, new_nil(p), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -6347,7 +6347,7 @@ yyreduce:
   case 83:
 
 /* Line 1455 of yacc.c  */
-#line 1613 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1613 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_masgn(p, (yyvsp[(2) - (3)].nd), NULL);
                     ;}
@@ -6356,7 +6356,7 @@ yyreduce:
   case 84:
 
 /* Line 1455 of yacc.c  */
-#line 1619 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1619 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list1((yyvsp[(1) - (2)].nd));
                     ;}
@@ -6365,7 +6365,7 @@ yyreduce:
   case 85:
 
 /* Line 1455 of yacc.c  */
-#line 1623 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1623 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = push((yyvsp[(1) - (3)].nd), (yyvsp[(2) - (3)].nd));
                     ;}
@@ -6374,7 +6374,7 @@ yyreduce:
   case 86:
 
 /* Line 1455 of yacc.c  */
-#line 1629 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1629 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list1((yyvsp[(1) - (1)].nd));
                     ;}
@@ -6383,7 +6383,7 @@ yyreduce:
   case 87:
 
 /* Line 1455 of yacc.c  */
-#line 1633 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1633 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = push((yyvsp[(1) - (2)].nd), (yyvsp[(2) - (2)].nd));
                     ;}
@@ -6392,7 +6392,7 @@ yyreduce:
   case 88:
 
 /* Line 1455 of yacc.c  */
-#line 1639 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1639 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       assignable(p, (yyvsp[(1) - (1)].nd));
                     ;}
@@ -6401,7 +6401,7 @@ yyreduce:
   case 89:
 
 /* Line 1455 of yacc.c  */
-#line 1643 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1643 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_call(p, (yyvsp[(1) - (4)].nd), intern("[]",2), (yyvsp[(3) - (4)].nd), '.');
                     ;}
@@ -6410,7 +6410,7 @@ yyreduce:
   case 90:
 
 /* Line 1455 of yacc.c  */
-#line 1647 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1647 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_call(p, (yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].id), 0, (yyvsp[(2) - (3)].num));
                     ;}
@@ -6419,7 +6419,7 @@ yyreduce:
   case 91:
 
 /* Line 1455 of yacc.c  */
-#line 1651 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1651 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_call(p, (yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].id), 0, tCOLON2);
                     ;}
@@ -6428,7 +6428,7 @@ yyreduce:
   case 92:
 
 /* Line 1455 of yacc.c  */
-#line 1655 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1655 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_call(p, (yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].id), 0, (yyvsp[(2) - (3)].num));
                     ;}
@@ -6437,7 +6437,7 @@ yyreduce:
   case 93:
 
 /* Line 1455 of yacc.c  */
-#line 1659 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1659 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       if (p->in_def || p->in_single)
                         yyerror(p, "dynamic constant assignment");
@@ -6448,7 +6448,7 @@ yyreduce:
   case 94:
 
 /* Line 1455 of yacc.c  */
-#line 1665 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1665 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       if (p->in_def || p->in_single)
                         yyerror(p, "dynamic constant assignment");
@@ -6459,7 +6459,7 @@ yyreduce:
   case 95:
 
 /* Line 1455 of yacc.c  */
-#line 1671 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1671 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       backref_error(p, (yyvsp[(1) - (1)].nd));
                       (yyval.nd) = 0;
@@ -6469,7 +6469,7 @@ yyreduce:
   case 96:
 
 /* Line 1455 of yacc.c  */
-#line 1678 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1678 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       assignable(p, (yyvsp[(1) - (1)].nd));
                     ;}
@@ -6478,7 +6478,7 @@ yyreduce:
   case 97:
 
 /* Line 1455 of yacc.c  */
-#line 1682 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1682 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_call(p, (yyvsp[(1) - (4)].nd), intern("[]",2), (yyvsp[(3) - (4)].nd), '.');
                     ;}
@@ -6487,7 +6487,7 @@ yyreduce:
   case 98:
 
 /* Line 1455 of yacc.c  */
-#line 1686 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1686 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_call(p, (yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].id), 0, (yyvsp[(2) - (3)].num));
                     ;}
@@ -6496,7 +6496,7 @@ yyreduce:
   case 99:
 
 /* Line 1455 of yacc.c  */
-#line 1690 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1690 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_call(p, (yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].id), 0, tCOLON2);
                     ;}
@@ -6505,7 +6505,7 @@ yyreduce:
   case 100:
 
 /* Line 1455 of yacc.c  */
-#line 1694 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1694 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_call(p, (yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].id), 0, (yyvsp[(2) - (3)].num));
                     ;}
@@ -6514,7 +6514,7 @@ yyreduce:
   case 101:
 
 /* Line 1455 of yacc.c  */
-#line 1698 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1698 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       if (p->in_def || p->in_single)
                         yyerror(p, "dynamic constant assignment");
@@ -6525,7 +6525,7 @@ yyreduce:
   case 102:
 
 /* Line 1455 of yacc.c  */
-#line 1704 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1704 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       if (p->in_def || p->in_single)
                         yyerror(p, "dynamic constant assignment");
@@ -6536,7 +6536,7 @@ yyreduce:
   case 103:
 
 /* Line 1455 of yacc.c  */
-#line 1710 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1710 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       backref_error(p, (yyvsp[(1) - (1)].nd));
                       (yyval.nd) = 0;
@@ -6546,7 +6546,7 @@ yyreduce:
   case 104:
 
 /* Line 1455 of yacc.c  */
-#line 1717 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1717 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       yyerror(p, "class/module name must be CONSTANT");
                     ;}
@@ -6555,7 +6555,7 @@ yyreduce:
   case 106:
 
 /* Line 1455 of yacc.c  */
-#line 1724 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1724 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = cons((node*)1, nsym((yyvsp[(2) - (2)].id)));
                     ;}
@@ -6564,7 +6564,7 @@ yyreduce:
   case 107:
 
 /* Line 1455 of yacc.c  */
-#line 1728 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1728 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = cons((node*)0, nsym((yyvsp[(1) - (1)].id)));
                     ;}
@@ -6573,7 +6573,7 @@ yyreduce:
   case 108:
 
 /* Line 1455 of yacc.c  */
-#line 1732 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1732 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       void_expr_error(p, (yyvsp[(1) - (3)].nd));
                       (yyval.nd) = cons((yyvsp[(1) - (3)].nd), nsym((yyvsp[(3) - (3)].id)));
@@ -6583,7 +6583,7 @@ yyreduce:
   case 112:
 
 /* Line 1455 of yacc.c  */
-#line 1742 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1742 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       p->lstate = EXPR_ENDFN;
                       (yyval.id) = (yyvsp[(1) - (1)].id);
@@ -6593,7 +6593,7 @@ yyreduce:
   case 113:
 
 /* Line 1455 of yacc.c  */
-#line 1747 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1747 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       p->lstate = EXPR_ENDFN;
                       (yyval.id) = (yyvsp[(1) - (1)].id);
@@ -6603,7 +6603,7 @@ yyreduce:
   case 116:
 
 /* Line 1455 of yacc.c  */
-#line 1758 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1758 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_undef(p, (yyvsp[(1) - (1)].id));
                     ;}
@@ -6612,14 +6612,14 @@ yyreduce:
   case 117:
 
 /* Line 1455 of yacc.c  */
-#line 1761 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1761 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {p->lstate = EXPR_FNAME;;}
     break;
 
   case 118:
 
 /* Line 1455 of yacc.c  */
-#line 1762 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1762 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = push((yyvsp[(1) - (4)].nd), nsym((yyvsp[(4) - (4)].id)));
                     ;}
@@ -6628,217 +6628,217 @@ yyreduce:
   case 119:
 
 /* Line 1455 of yacc.c  */
-#line 1767 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1767 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern_c('|');   ;}
     break;
 
   case 120:
 
 /* Line 1455 of yacc.c  */
-#line 1768 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1768 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern_c('^');   ;}
     break;
 
   case 121:
 
 /* Line 1455 of yacc.c  */
-#line 1769 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1769 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern_c('&');   ;}
     break;
 
   case 122:
 
 /* Line 1455 of yacc.c  */
-#line 1770 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1770 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern("<=>",3); ;}
     break;
 
   case 123:
 
 /* Line 1455 of yacc.c  */
-#line 1771 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1771 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern("==",2);  ;}
     break;
 
   case 124:
 
 /* Line 1455 of yacc.c  */
-#line 1772 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1772 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern("===",3); ;}
     break;
 
   case 125:
 
 /* Line 1455 of yacc.c  */
-#line 1773 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1773 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern("=~",2);  ;}
     break;
 
   case 126:
 
 /* Line 1455 of yacc.c  */
-#line 1774 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1774 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern("!~",2);  ;}
     break;
 
   case 127:
 
 /* Line 1455 of yacc.c  */
-#line 1775 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1775 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern_c('>');   ;}
     break;
 
   case 128:
 
 /* Line 1455 of yacc.c  */
-#line 1776 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1776 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern(">=",2);  ;}
     break;
 
   case 129:
 
 /* Line 1455 of yacc.c  */
-#line 1777 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1777 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern_c('<');   ;}
     break;
 
   case 130:
 
 /* Line 1455 of yacc.c  */
-#line 1778 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1778 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern("<=",2);  ;}
     break;
 
   case 131:
 
 /* Line 1455 of yacc.c  */
-#line 1779 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1779 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern("!=",2);  ;}
     break;
 
   case 132:
 
 /* Line 1455 of yacc.c  */
-#line 1780 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1780 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern("<<",2);  ;}
     break;
 
   case 133:
 
 /* Line 1455 of yacc.c  */
-#line 1781 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1781 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern(">>",2);  ;}
     break;
 
   case 134:
 
 /* Line 1455 of yacc.c  */
-#line 1782 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1782 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern_c('+');   ;}
     break;
 
   case 135:
 
 /* Line 1455 of yacc.c  */
-#line 1783 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1783 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern_c('-');   ;}
     break;
 
   case 136:
 
 /* Line 1455 of yacc.c  */
-#line 1784 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1784 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern_c('*');   ;}
     break;
 
   case 137:
 
 /* Line 1455 of yacc.c  */
-#line 1785 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1785 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern_c('*');   ;}
     break;
 
   case 138:
 
 /* Line 1455 of yacc.c  */
-#line 1786 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1786 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern_c('/');   ;}
     break;
 
   case 139:
 
 /* Line 1455 of yacc.c  */
-#line 1787 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1787 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern_c('%');   ;}
     break;
 
   case 140:
 
 /* Line 1455 of yacc.c  */
-#line 1788 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1788 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern("**",2);  ;}
     break;
 
   case 141:
 
 /* Line 1455 of yacc.c  */
-#line 1789 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1789 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern("**",2);  ;}
     break;
 
   case 142:
 
 /* Line 1455 of yacc.c  */
-#line 1790 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1790 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern_c('!');   ;}
     break;
 
   case 143:
 
 /* Line 1455 of yacc.c  */
-#line 1791 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1791 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern_c('~');   ;}
     break;
 
   case 144:
 
 /* Line 1455 of yacc.c  */
-#line 1792 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1792 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern("+@",2);  ;}
     break;
 
   case 145:
 
 /* Line 1455 of yacc.c  */
-#line 1793 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1793 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern("-@",2);  ;}
     break;
 
   case 146:
 
 /* Line 1455 of yacc.c  */
-#line 1794 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1794 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern("[]",2);  ;}
     break;
 
   case 147:
 
 /* Line 1455 of yacc.c  */
-#line 1795 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1795 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern("[]=",3); ;}
     break;
 
   case 148:
 
 /* Line 1455 of yacc.c  */
-#line 1796 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1796 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     { (yyval.id) = intern_c('`');   ;}
     break;
 
   case 189:
 
 /* Line 1455 of yacc.c  */
-#line 1814 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1814 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_asgn(p, (yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -6847,7 +6847,7 @@ yyreduce:
   case 190:
 
 /* Line 1455 of yacc.c  */
-#line 1818 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1818 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_op_asgn(p, (yyvsp[(1) - (3)].nd), (yyvsp[(2) - (3)].id), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -6856,7 +6856,7 @@ yyreduce:
   case 191:
 
 /* Line 1455 of yacc.c  */
-#line 1822 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1822 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_op_asgn(p, new_call(p, (yyvsp[(1) - (6)].nd), intern("[]",2), (yyvsp[(3) - (6)].nd), '.'), (yyvsp[(5) - (6)].id), (yyvsp[(6) - (6)].nd));
                     ;}
@@ -6865,7 +6865,7 @@ yyreduce:
   case 192:
 
 /* Line 1455 of yacc.c  */
-#line 1826 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1826 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_op_asgn(p, new_call(p, (yyvsp[(1) - (5)].nd), (yyvsp[(3) - (5)].id), 0, (yyvsp[(2) - (5)].num)), (yyvsp[(4) - (5)].id), (yyvsp[(5) - (5)].nd));
                     ;}
@@ -6874,7 +6874,7 @@ yyreduce:
   case 193:
 
 /* Line 1455 of yacc.c  */
-#line 1830 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1830 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_op_asgn(p, new_call(p, (yyvsp[(1) - (5)].nd), (yyvsp[(3) - (5)].id), 0, (yyvsp[(2) - (5)].num)), (yyvsp[(4) - (5)].id), (yyvsp[(5) - (5)].nd));
                     ;}
@@ -6883,7 +6883,7 @@ yyreduce:
   case 194:
 
 /* Line 1455 of yacc.c  */
-#line 1834 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1834 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_op_asgn(p, new_call(p, (yyvsp[(1) - (5)].nd), (yyvsp[(3) - (5)].id), 0, tCOLON2), (yyvsp[(4) - (5)].id), (yyvsp[(5) - (5)].nd));
                     ;}
@@ -6892,7 +6892,7 @@ yyreduce:
   case 195:
 
 /* Line 1455 of yacc.c  */
-#line 1838 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1838 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       yyerror(p, "constant re-assignment");
                       (yyval.nd) = new_begin(p, 0);
@@ -6902,7 +6902,7 @@ yyreduce:
   case 196:
 
 /* Line 1455 of yacc.c  */
-#line 1843 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1843 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       yyerror(p, "constant re-assignment");
                       (yyval.nd) = new_begin(p, 0);
@@ -6912,7 +6912,7 @@ yyreduce:
   case 197:
 
 /* Line 1455 of yacc.c  */
-#line 1848 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1848 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       backref_error(p, (yyvsp[(1) - (3)].nd));
                       (yyval.nd) = new_begin(p, 0);
@@ -6922,7 +6922,7 @@ yyreduce:
   case 198:
 
 /* Line 1455 of yacc.c  */
-#line 1853 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1853 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_dot2(p, (yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -6931,7 +6931,7 @@ yyreduce:
   case 199:
 
 /* Line 1455 of yacc.c  */
-#line 1857 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1857 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_dot3(p, (yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -6940,7 +6940,7 @@ yyreduce:
   case 200:
 
 /* Line 1455 of yacc.c  */
-#line 1861 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1861 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_bin_op(p, (yyvsp[(1) - (3)].nd), "+", (yyvsp[(3) - (3)].nd));
                     ;}
@@ -6949,7 +6949,7 @@ yyreduce:
   case 201:
 
 /* Line 1455 of yacc.c  */
-#line 1865 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1865 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_bin_op(p, (yyvsp[(1) - (3)].nd), "-", (yyvsp[(3) - (3)].nd));
                     ;}
@@ -6958,7 +6958,7 @@ yyreduce:
   case 202:
 
 /* Line 1455 of yacc.c  */
-#line 1869 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1869 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_bin_op(p, (yyvsp[(1) - (3)].nd), "*", (yyvsp[(3) - (3)].nd));
                     ;}
@@ -6967,7 +6967,7 @@ yyreduce:
   case 203:
 
 /* Line 1455 of yacc.c  */
-#line 1873 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1873 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_bin_op(p, (yyvsp[(1) - (3)].nd), "/", (yyvsp[(3) - (3)].nd));
                     ;}
@@ -6976,7 +6976,7 @@ yyreduce:
   case 204:
 
 /* Line 1455 of yacc.c  */
-#line 1877 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1877 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_bin_op(p, (yyvsp[(1) - (3)].nd), "%", (yyvsp[(3) - (3)].nd));
                     ;}
@@ -6985,7 +6985,7 @@ yyreduce:
   case 205:
 
 /* Line 1455 of yacc.c  */
-#line 1881 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1881 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_bin_op(p, (yyvsp[(1) - (3)].nd), "**", (yyvsp[(3) - (3)].nd));
                     ;}
@@ -6994,7 +6994,7 @@ yyreduce:
   case 206:
 
 /* Line 1455 of yacc.c  */
-#line 1885 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1885 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_uni_op(p, call_bin_op(p, (yyvsp[(2) - (4)].nd), "**", (yyvsp[(4) - (4)].nd)), "-@");
                     ;}
@@ -7003,7 +7003,7 @@ yyreduce:
   case 207:
 
 /* Line 1455 of yacc.c  */
-#line 1889 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1889 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_uni_op(p, call_bin_op(p, (yyvsp[(2) - (4)].nd), "**", (yyvsp[(4) - (4)].nd)), "-@");
                     ;}
@@ -7012,7 +7012,7 @@ yyreduce:
   case 208:
 
 /* Line 1455 of yacc.c  */
-#line 1893 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1893 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_uni_op(p, (yyvsp[(2) - (2)].nd), "+@");
                     ;}
@@ -7021,7 +7021,7 @@ yyreduce:
   case 209:
 
 /* Line 1455 of yacc.c  */
-#line 1897 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1897 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_uni_op(p, (yyvsp[(2) - (2)].nd), "-@");
                     ;}
@@ -7030,7 +7030,7 @@ yyreduce:
   case 210:
 
 /* Line 1455 of yacc.c  */
-#line 1901 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1901 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_bin_op(p, (yyvsp[(1) - (3)].nd), "|", (yyvsp[(3) - (3)].nd));
                     ;}
@@ -7039,7 +7039,7 @@ yyreduce:
   case 211:
 
 /* Line 1455 of yacc.c  */
-#line 1905 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1905 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_bin_op(p, (yyvsp[(1) - (3)].nd), "^", (yyvsp[(3) - (3)].nd));
                     ;}
@@ -7048,7 +7048,7 @@ yyreduce:
   case 212:
 
 /* Line 1455 of yacc.c  */
-#line 1909 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1909 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_bin_op(p, (yyvsp[(1) - (3)].nd), "&", (yyvsp[(3) - (3)].nd));
                     ;}
@@ -7057,7 +7057,7 @@ yyreduce:
   case 213:
 
 /* Line 1455 of yacc.c  */
-#line 1913 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1913 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_bin_op(p, (yyvsp[(1) - (3)].nd), "<=>", (yyvsp[(3) - (3)].nd));
                     ;}
@@ -7066,7 +7066,7 @@ yyreduce:
   case 214:
 
 /* Line 1455 of yacc.c  */
-#line 1917 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1917 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_bin_op(p, (yyvsp[(1) - (3)].nd), ">", (yyvsp[(3) - (3)].nd));
                     ;}
@@ -7075,7 +7075,7 @@ yyreduce:
   case 215:
 
 /* Line 1455 of yacc.c  */
-#line 1921 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1921 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_bin_op(p, (yyvsp[(1) - (3)].nd), ">=", (yyvsp[(3) - (3)].nd));
                     ;}
@@ -7084,7 +7084,7 @@ yyreduce:
   case 216:
 
 /* Line 1455 of yacc.c  */
-#line 1925 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1925 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_bin_op(p, (yyvsp[(1) - (3)].nd), "<", (yyvsp[(3) - (3)].nd));
                     ;}
@@ -7093,7 +7093,7 @@ yyreduce:
   case 217:
 
 /* Line 1455 of yacc.c  */
-#line 1929 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1929 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_bin_op(p, (yyvsp[(1) - (3)].nd), "<=", (yyvsp[(3) - (3)].nd));
                     ;}
@@ -7102,7 +7102,7 @@ yyreduce:
   case 218:
 
 /* Line 1455 of yacc.c  */
-#line 1933 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1933 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_bin_op(p, (yyvsp[(1) - (3)].nd), "==", (yyvsp[(3) - (3)].nd));
                     ;}
@@ -7111,7 +7111,7 @@ yyreduce:
   case 219:
 
 /* Line 1455 of yacc.c  */
-#line 1937 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1937 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_bin_op(p, (yyvsp[(1) - (3)].nd), "===", (yyvsp[(3) - (3)].nd));
                     ;}
@@ -7120,7 +7120,7 @@ yyreduce:
   case 220:
 
 /* Line 1455 of yacc.c  */
-#line 1941 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1941 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_bin_op(p, (yyvsp[(1) - (3)].nd), "!=", (yyvsp[(3) - (3)].nd));
                     ;}
@@ -7129,7 +7129,7 @@ yyreduce:
   case 221:
 
 /* Line 1455 of yacc.c  */
-#line 1945 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1945 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_bin_op(p, (yyvsp[(1) - (3)].nd), "=~", (yyvsp[(3) - (3)].nd));
                     ;}
@@ -7138,7 +7138,7 @@ yyreduce:
   case 222:
 
 /* Line 1455 of yacc.c  */
-#line 1949 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1949 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_bin_op(p, (yyvsp[(1) - (3)].nd), "!~", (yyvsp[(3) - (3)].nd));
                     ;}
@@ -7147,7 +7147,7 @@ yyreduce:
   case 223:
 
 /* Line 1455 of yacc.c  */
-#line 1953 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1953 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_uni_op(p, cond((yyvsp[(2) - (2)].nd)), "!");
                     ;}
@@ -7156,7 +7156,7 @@ yyreduce:
   case 224:
 
 /* Line 1455 of yacc.c  */
-#line 1957 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1957 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_uni_op(p, cond((yyvsp[(2) - (2)].nd)), "~");
                     ;}
@@ -7165,7 +7165,7 @@ yyreduce:
   case 225:
 
 /* Line 1455 of yacc.c  */
-#line 1961 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1961 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_bin_op(p, (yyvsp[(1) - (3)].nd), "<<", (yyvsp[(3) - (3)].nd));
                     ;}
@@ -7174,7 +7174,7 @@ yyreduce:
   case 226:
 
 /* Line 1455 of yacc.c  */
-#line 1965 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1965 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_bin_op(p, (yyvsp[(1) - (3)].nd), ">>", (yyvsp[(3) - (3)].nd));
                     ;}
@@ -7183,7 +7183,7 @@ yyreduce:
   case 227:
 
 /* Line 1455 of yacc.c  */
-#line 1969 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1969 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_and(p, (yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -7192,7 +7192,7 @@ yyreduce:
   case 228:
 
 /* Line 1455 of yacc.c  */
-#line 1973 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1973 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_or(p, (yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -7201,7 +7201,7 @@ yyreduce:
   case 229:
 
 /* Line 1455 of yacc.c  */
-#line 1977 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1977 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_if(p, cond((yyvsp[(1) - (6)].nd)), (yyvsp[(3) - (6)].nd), (yyvsp[(6) - (6)].nd));
                     ;}
@@ -7210,7 +7210,7 @@ yyreduce:
   case 230:
 
 /* Line 1455 of yacc.c  */
-#line 1981 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1981 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_if(p, cond((yyvsp[(1) - (6)].nd)), (yyvsp[(3) - (6)].nd), (yyvsp[(6) - (6)].nd));
                     ;}
@@ -7219,7 +7219,7 @@ yyreduce:
   case 231:
 
 /* Line 1455 of yacc.c  */
-#line 1985 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1985 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(1) - (1)].nd);
                     ;}
@@ -7228,7 +7228,7 @@ yyreduce:
   case 233:
 
 /* Line 1455 of yacc.c  */
-#line 1992 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1992 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(1) - (2)].nd);
                       NODE_LINENO((yyval.nd), (yyvsp[(1) - (2)].nd));
@@ -7238,7 +7238,7 @@ yyreduce:
   case 234:
 
 /* Line 1455 of yacc.c  */
-#line 1997 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 1997 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = push((yyvsp[(1) - (4)].nd), new_kw_hash(p, (yyvsp[(3) - (4)].nd)));
                     ;}
@@ -7247,7 +7247,7 @@ yyreduce:
   case 235:
 
 /* Line 1455 of yacc.c  */
-#line 2001 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2001 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = cons(new_kw_hash(p, (yyvsp[(1) - (2)].nd)), 0);
                       NODE_LINENO((yyval.nd), (yyvsp[(1) - (2)].nd));
@@ -7257,7 +7257,7 @@ yyreduce:
   case 236:
 
 /* Line 1455 of yacc.c  */
-#line 2008 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2008 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(1) - (1)].nd);
                     ;}
@@ -7266,7 +7266,7 @@ yyreduce:
   case 237:
 
 /* Line 1455 of yacc.c  */
-#line 2012 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2012 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       void_expr_error(p, (yyvsp[(1) - (3)].nd));
                       void_expr_error(p, (yyvsp[(3) - (3)].nd));
@@ -7277,7 +7277,7 @@ yyreduce:
   case 238:
 
 /* Line 1455 of yacc.c  */
-#line 2020 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2020 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(2) - (3)].nd);
                     ;}
@@ -7286,7 +7286,7 @@ yyreduce:
   case 243:
 
 /* Line 1455 of yacc.c  */
-#line 2032 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2032 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = cons((yyvsp[(1) - (2)].nd),0);
                       NODE_LINENO((yyval.nd), (yyvsp[(1) - (2)].nd));
@@ -7296,7 +7296,7 @@ yyreduce:
   case 244:
 
 /* Line 1455 of yacc.c  */
-#line 2037 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2037 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = cons(push((yyvsp[(1) - (4)].nd), new_kw_hash(p, (yyvsp[(3) - (4)].nd))), 0);
                       NODE_LINENO((yyval.nd), (yyvsp[(1) - (4)].nd));
@@ -7306,7 +7306,7 @@ yyreduce:
   case 245:
 
 /* Line 1455 of yacc.c  */
-#line 2042 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2042 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = cons(list1(new_kw_hash(p, (yyvsp[(1) - (2)].nd))), 0);
                       NODE_LINENO((yyval.nd), (yyvsp[(1) - (2)].nd));
@@ -7316,7 +7316,7 @@ yyreduce:
   case 246:
 
 /* Line 1455 of yacc.c  */
-#line 2049 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2049 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       void_expr_error(p, (yyvsp[(1) - (1)].nd));
                       (yyval.nd) = cons(list1((yyvsp[(1) - (1)].nd)), 0);
@@ -7327,7 +7327,7 @@ yyreduce:
   case 247:
 
 /* Line 1455 of yacc.c  */
-#line 2055 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2055 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = cons((yyvsp[(1) - (2)].nd), (yyvsp[(2) - (2)].nd));
                       NODE_LINENO((yyval.nd), (yyvsp[(1) - (2)].nd));
@@ -7337,7 +7337,7 @@ yyreduce:
   case 248:
 
 /* Line 1455 of yacc.c  */
-#line 2060 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2060 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = cons(list1(new_kw_hash(p, (yyvsp[(1) - (2)].nd))), (yyvsp[(2) - (2)].nd));
                       NODE_LINENO((yyval.nd), (yyvsp[(1) - (2)].nd));
@@ -7347,7 +7347,7 @@ yyreduce:
   case 249:
 
 /* Line 1455 of yacc.c  */
-#line 2065 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2065 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = cons(push((yyvsp[(1) - (4)].nd), new_kw_hash(p, (yyvsp[(3) - (4)].nd))), (yyvsp[(4) - (4)].nd));
                       NODE_LINENO((yyval.nd), (yyvsp[(1) - (4)].nd));
@@ -7357,7 +7357,7 @@ yyreduce:
   case 250:
 
 /* Line 1455 of yacc.c  */
-#line 2070 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2070 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = cons(0, (yyvsp[(1) - (1)].nd));
                       NODE_LINENO((yyval.nd), (yyvsp[(1) - (1)].nd));
@@ -7367,7 +7367,7 @@ yyreduce:
   case 251:
 
 /* Line 1455 of yacc.c  */
-#line 2076 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2076 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.stack) = p->cmdarg_stack;
                       CMDARG_PUSH(1);
@@ -7377,7 +7377,7 @@ yyreduce:
   case 252:
 
 /* Line 1455 of yacc.c  */
-#line 2081 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2081 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       p->cmdarg_stack = (yyvsp[(1) - (2)].stack);
                       (yyval.nd) = (yyvsp[(2) - (2)].nd);
@@ -7387,7 +7387,7 @@ yyreduce:
   case 253:
 
 /* Line 1455 of yacc.c  */
-#line 2088 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2088 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_block_arg(p, (yyvsp[(2) - (2)].nd));
                     ;}
@@ -7396,7 +7396,7 @@ yyreduce:
   case 254:
 
 /* Line 1455 of yacc.c  */
-#line 2094 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2094 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(2) - (2)].nd);
                     ;}
@@ -7405,7 +7405,7 @@ yyreduce:
   case 255:
 
 /* Line 1455 of yacc.c  */
-#line 2098 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2098 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = 0;
                     ;}
@@ -7414,7 +7414,7 @@ yyreduce:
   case 258:
 
 /* Line 1455 of yacc.c  */
-#line 2108 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2108 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       void_expr_error(p, (yyvsp[(1) - (1)].nd));
                       (yyval.nd) = cons((yyvsp[(1) - (1)].nd), 0);
@@ -7425,7 +7425,7 @@ yyreduce:
   case 259:
 
 /* Line 1455 of yacc.c  */
-#line 2114 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2114 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       void_expr_error(p, (yyvsp[(2) - (2)].nd));
                       (yyval.nd) = cons(new_splat(p, (yyvsp[(2) - (2)].nd)), 0);
@@ -7436,7 +7436,7 @@ yyreduce:
   case 260:
 
 /* Line 1455 of yacc.c  */
-#line 2120 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2120 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       void_expr_error(p, (yyvsp[(3) - (3)].nd));
                       (yyval.nd) = push((yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].nd));
@@ -7446,7 +7446,7 @@ yyreduce:
   case 261:
 
 /* Line 1455 of yacc.c  */
-#line 2125 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2125 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       void_expr_error(p, (yyvsp[(4) - (4)].nd));
                       (yyval.nd) = push((yyvsp[(1) - (4)].nd), new_splat(p, (yyvsp[(4) - (4)].nd)));
@@ -7456,7 +7456,7 @@ yyreduce:
   case 262:
 
 /* Line 1455 of yacc.c  */
-#line 2132 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2132 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       void_expr_error(p, (yyvsp[(3) - (3)].nd));
                       (yyval.nd) = push((yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].nd));
@@ -7466,7 +7466,7 @@ yyreduce:
   case 263:
 
 /* Line 1455 of yacc.c  */
-#line 2137 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2137 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       void_expr_error(p, (yyvsp[(4) - (4)].nd));
                       (yyval.nd) = push((yyvsp[(1) - (4)].nd), new_splat(p, (yyvsp[(4) - (4)].nd)));
@@ -7476,7 +7476,7 @@ yyreduce:
   case 264:
 
 /* Line 1455 of yacc.c  */
-#line 2142 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2142 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       void_expr_error(p, (yyvsp[(2) - (2)].nd));
                       (yyval.nd) = list1(new_splat(p, (yyvsp[(2) - (2)].nd)));
@@ -7486,7 +7486,7 @@ yyreduce:
   case 272:
 
 /* Line 1455 of yacc.c  */
-#line 2156 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2156 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_fcall(p, (yyvsp[(1) - (1)].id), 0);
                     ;}
@@ -7495,7 +7495,7 @@ yyreduce:
   case 273:
 
 /* Line 1455 of yacc.c  */
-#line 2160 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2160 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.stack) = p->cmdarg_stack;
                       p->cmdarg_stack = 0;
@@ -7505,7 +7505,7 @@ yyreduce:
   case 274:
 
 /* Line 1455 of yacc.c  */
-#line 2166 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2166 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       p->cmdarg_stack = (yyvsp[(2) - (4)].stack);
                       (yyval.nd) = (yyvsp[(3) - (4)].nd);
@@ -7515,7 +7515,7 @@ yyreduce:
   case 275:
 
 /* Line 1455 of yacc.c  */
-#line 2171 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2171 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.stack) = p->cmdarg_stack;
                       p->cmdarg_stack = 0;
@@ -7525,14 +7525,14 @@ yyreduce:
   case 276:
 
 /* Line 1455 of yacc.c  */
-#line 2175 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2175 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {p->lstate = EXPR_ENDARG;;}
     break;
 
   case 277:
 
 /* Line 1455 of yacc.c  */
-#line 2176 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2176 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       p->cmdarg_stack = (yyvsp[(2) - (5)].stack);
                       (yyval.nd) = (yyvsp[(3) - (5)].nd);
@@ -7542,14 +7542,14 @@ yyreduce:
   case 278:
 
 /* Line 1455 of yacc.c  */
-#line 2180 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2180 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {p->lstate = EXPR_ENDARG;;}
     break;
 
   case 279:
 
 /* Line 1455 of yacc.c  */
-#line 2181 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2181 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_nil(p);
                     ;}
@@ -7558,7 +7558,7 @@ yyreduce:
   case 280:
 
 /* Line 1455 of yacc.c  */
-#line 2185 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2185 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(2) - (3)].nd);
                     ;}
@@ -7567,7 +7567,7 @@ yyreduce:
   case 281:
 
 /* Line 1455 of yacc.c  */
-#line 2189 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2189 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_colon2(p, (yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].id));
                     ;}
@@ -7576,7 +7576,7 @@ yyreduce:
   case 282:
 
 /* Line 1455 of yacc.c  */
-#line 2193 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2193 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_colon3(p, (yyvsp[(2) - (2)].id));
                     ;}
@@ -7585,7 +7585,7 @@ yyreduce:
   case 283:
 
 /* Line 1455 of yacc.c  */
-#line 2197 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2197 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_array(p, (yyvsp[(2) - (3)].nd));
                       NODE_LINENO((yyval.nd), (yyvsp[(2) - (3)].nd));
@@ -7595,7 +7595,7 @@ yyreduce:
   case 284:
 
 /* Line 1455 of yacc.c  */
-#line 2202 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2202 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_hash(p, (yyvsp[(2) - (3)].nd));
                       NODE_LINENO((yyval.nd), (yyvsp[(2) - (3)].nd));
@@ -7605,7 +7605,7 @@ yyreduce:
   case 285:
 
 /* Line 1455 of yacc.c  */
-#line 2207 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2207 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_return(p, 0);
                     ;}
@@ -7614,7 +7614,7 @@ yyreduce:
   case 286:
 
 /* Line 1455 of yacc.c  */
-#line 2211 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2211 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_yield(p, (yyvsp[(2) - (2)].nd));
                     ;}
@@ -7623,7 +7623,7 @@ yyreduce:
   case 287:
 
 /* Line 1455 of yacc.c  */
-#line 2215 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2215 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_uni_op(p, cond((yyvsp[(3) - (4)].nd)), "!");
                     ;}
@@ -7632,7 +7632,7 @@ yyreduce:
   case 288:
 
 /* Line 1455 of yacc.c  */
-#line 2219 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2219 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = call_uni_op(p, new_nil(p), "!");
                     ;}
@@ -7641,7 +7641,7 @@ yyreduce:
   case 289:
 
 /* Line 1455 of yacc.c  */
-#line 2223 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2223 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_fcall(p, (yyvsp[(1) - (2)].id), cons(0, (yyvsp[(2) - (2)].nd)));
                     ;}
@@ -7650,7 +7650,7 @@ yyreduce:
   case 291:
 
 /* Line 1455 of yacc.c  */
-#line 2228 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2228 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       call_with_block(p, (yyvsp[(1) - (2)].nd), (yyvsp[(2) - (2)].nd));
                       (yyval.nd) = (yyvsp[(1) - (2)].nd);
@@ -7660,7 +7660,7 @@ yyreduce:
   case 292:
 
 /* Line 1455 of yacc.c  */
-#line 2233 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2233 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       local_nest(p);
                       (yyval.num) = p->lpar_beg;
@@ -7671,7 +7671,7 @@ yyreduce:
   case 293:
 
 /* Line 1455 of yacc.c  */
-#line 2239 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2239 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.stack) = p->cmdarg_stack;
                       p->cmdarg_stack = 0;
@@ -7681,7 +7681,7 @@ yyreduce:
   case 294:
 
 /* Line 1455 of yacc.c  */
-#line 2244 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2244 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       p->lpar_beg = (yyvsp[(2) - (5)].num);
                       (yyval.nd) = new_lambda(p, (yyvsp[(3) - (5)].nd), (yyvsp[(5) - (5)].nd));
@@ -7694,7 +7694,7 @@ yyreduce:
   case 295:
 
 /* Line 1455 of yacc.c  */
-#line 2255 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2255 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_if(p, cond((yyvsp[(2) - (6)].nd)), (yyvsp[(4) - (6)].nd), (yyvsp[(5) - (6)].nd));
                       SET_LINENO((yyval.nd), (yyvsp[(1) - (6)].num));
@@ -7704,7 +7704,7 @@ yyreduce:
   case 296:
 
 /* Line 1455 of yacc.c  */
-#line 2263 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2263 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_unless(p, cond((yyvsp[(2) - (6)].nd)), (yyvsp[(4) - (6)].nd), (yyvsp[(5) - (6)].nd));
                       SET_LINENO((yyval.nd), (yyvsp[(1) - (6)].num));
@@ -7714,21 +7714,21 @@ yyreduce:
   case 297:
 
 /* Line 1455 of yacc.c  */
-#line 2267 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2267 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {COND_PUSH(1);;}
     break;
 
   case 298:
 
 /* Line 1455 of yacc.c  */
-#line 2267 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2267 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {COND_POP();;}
     break;
 
   case 299:
 
 /* Line 1455 of yacc.c  */
-#line 2270 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2270 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_while(p, cond((yyvsp[(3) - (7)].nd)), (yyvsp[(6) - (7)].nd));
                       SET_LINENO((yyval.nd), (yyvsp[(1) - (7)].num));
@@ -7738,21 +7738,21 @@ yyreduce:
   case 300:
 
 /* Line 1455 of yacc.c  */
-#line 2274 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2274 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {COND_PUSH(1);;}
     break;
 
   case 301:
 
 /* Line 1455 of yacc.c  */
-#line 2274 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2274 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {COND_POP();;}
     break;
 
   case 302:
 
 /* Line 1455 of yacc.c  */
-#line 2277 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2277 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_until(p, cond((yyvsp[(3) - (7)].nd)), (yyvsp[(6) - (7)].nd));
                       SET_LINENO((yyval.nd), (yyvsp[(1) - (7)].num));
@@ -7762,7 +7762,7 @@ yyreduce:
   case 303:
 
 /* Line 1455 of yacc.c  */
-#line 2284 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2284 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_case(p, (yyvsp[(2) - (5)].nd), (yyvsp[(4) - (5)].nd));
                     ;}
@@ -7771,7 +7771,7 @@ yyreduce:
   case 304:
 
 /* Line 1455 of yacc.c  */
-#line 2288 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2288 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_case(p, 0, (yyvsp[(3) - (4)].nd));
                     ;}
@@ -7780,21 +7780,21 @@ yyreduce:
   case 305:
 
 /* Line 1455 of yacc.c  */
-#line 2292 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2292 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {COND_PUSH(1);;}
     break;
 
   case 306:
 
 /* Line 1455 of yacc.c  */
-#line 2294 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2294 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {COND_POP();;}
     break;
 
   case 307:
 
 /* Line 1455 of yacc.c  */
-#line 2297 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2297 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_for(p, (yyvsp[(2) - (9)].nd), (yyvsp[(5) - (9)].nd), (yyvsp[(8) - (9)].nd));
                       SET_LINENO((yyval.nd), (yyvsp[(1) - (9)].num));
@@ -7804,7 +7804,7 @@ yyreduce:
   case 308:
 
 /* Line 1455 of yacc.c  */
-#line 2303 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2303 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       if (p->in_def || p->in_single)
                         yyerror(p, "class definition in method body");
@@ -7815,7 +7815,7 @@ yyreduce:
   case 309:
 
 /* Line 1455 of yacc.c  */
-#line 2310 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2310 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_class(p, (yyvsp[(2) - (6)].nd), (yyvsp[(3) - (6)].nd), (yyvsp[(5) - (6)].nd));
                       SET_LINENO((yyval.nd), (yyvsp[(1) - (6)].num));
@@ -7826,7 +7826,7 @@ yyreduce:
   case 310:
 
 /* Line 1455 of yacc.c  */
-#line 2317 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2317 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.num) = p->in_def;
                       p->in_def = 0;
@@ -7836,7 +7836,7 @@ yyreduce:
   case 311:
 
 /* Line 1455 of yacc.c  */
-#line 2322 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2322 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = cons(local_switch(p), nint(p->in_single));
                       p->in_single = 0;
@@ -7846,7 +7846,7 @@ yyreduce:
   case 312:
 
 /* Line 1455 of yacc.c  */
-#line 2328 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2328 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_sclass(p, (yyvsp[(3) - (8)].nd), (yyvsp[(7) - (8)].nd));
                       SET_LINENO((yyval.nd), (yyvsp[(1) - (8)].num));
@@ -7859,7 +7859,7 @@ yyreduce:
   case 313:
 
 /* Line 1455 of yacc.c  */
-#line 2337 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2337 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       if (p->in_def || p->in_single)
                         yyerror(p, "module definition in method body");
@@ -7870,7 +7870,7 @@ yyreduce:
   case 314:
 
 /* Line 1455 of yacc.c  */
-#line 2344 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2344 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_module(p, (yyvsp[(2) - (5)].nd), (yyvsp[(4) - (5)].nd));
                       SET_LINENO((yyval.nd), (yyvsp[(1) - (5)].num));
@@ -7881,7 +7881,7 @@ yyreduce:
   case 315:
 
 /* Line 1455 of yacc.c  */
-#line 2350 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2350 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.stack) = p->cmdarg_stack;
                       p->cmdarg_stack = 0;
@@ -7891,7 +7891,7 @@ yyreduce:
   case 316:
 
 /* Line 1455 of yacc.c  */
-#line 2354 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2354 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       p->in_def++;
                       (yyval.nd) = local_switch(p);
@@ -7901,7 +7901,7 @@ yyreduce:
   case 317:
 
 /* Line 1455 of yacc.c  */
-#line 2361 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2361 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_def(p, (yyvsp[(2) - (7)].id), (yyvsp[(5) - (7)].nd), (yyvsp[(6) - (7)].nd));
                       SET_LINENO((yyval.nd), (yyvsp[(1) - (7)].num));
@@ -7914,7 +7914,7 @@ yyreduce:
   case 318:
 
 /* Line 1455 of yacc.c  */
-#line 2369 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2369 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       p->lstate = EXPR_FNAME;
                       (yyval.stack) = p->cmdarg_stack;
@@ -7925,7 +7925,7 @@ yyreduce:
   case 319:
 
 /* Line 1455 of yacc.c  */
-#line 2375 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2375 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       p->in_single++;
                       p->lstate = EXPR_ENDFN; /* force for args */
@@ -7936,7 +7936,7 @@ yyreduce:
   case 320:
 
 /* Line 1455 of yacc.c  */
-#line 2383 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2383 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_sdef(p, (yyvsp[(2) - (9)].nd), (yyvsp[(5) - (9)].id), (yyvsp[(7) - (9)].nd), (yyvsp[(8) - (9)].nd));
                       SET_LINENO((yyval.nd), (yyvsp[(1) - (9)].num));
@@ -7949,7 +7949,7 @@ yyreduce:
   case 321:
 
 /* Line 1455 of yacc.c  */
-#line 2391 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2391 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_break(p, 0);
                     ;}
@@ -7958,7 +7958,7 @@ yyreduce:
   case 322:
 
 /* Line 1455 of yacc.c  */
-#line 2395 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2395 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_next(p, 0);
                     ;}
@@ -7967,7 +7967,7 @@ yyreduce:
   case 323:
 
 /* Line 1455 of yacc.c  */
-#line 2399 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2399 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_redo(p);
                     ;}
@@ -7976,7 +7976,7 @@ yyreduce:
   case 324:
 
 /* Line 1455 of yacc.c  */
-#line 2403 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2403 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_retry(p);
                     ;}
@@ -7985,7 +7985,7 @@ yyreduce:
   case 325:
 
 /* Line 1455 of yacc.c  */
-#line 2409 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2409 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(1) - (1)].nd);
                       if (!(yyval.nd)) (yyval.nd) = new_nil(p);
@@ -7995,7 +7995,7 @@ yyreduce:
   case 332:
 
 /* Line 1455 of yacc.c  */
-#line 2428 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2428 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_if(p, cond((yyvsp[(2) - (5)].nd)), (yyvsp[(4) - (5)].nd), (yyvsp[(5) - (5)].nd));
                     ;}
@@ -8004,7 +8004,7 @@ yyreduce:
   case 334:
 
 /* Line 1455 of yacc.c  */
-#line 2435 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2435 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(2) - (2)].nd);
                     ;}
@@ -8013,7 +8013,7 @@ yyreduce:
   case 335:
 
 /* Line 1455 of yacc.c  */
-#line 2441 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2441 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list1(list1((yyvsp[(1) - (1)].nd)));
                     ;}
@@ -8022,7 +8022,7 @@ yyreduce:
   case 337:
 
 /* Line 1455 of yacc.c  */
-#line 2448 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2448 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_arg(p, (yyvsp[(1) - (1)].id));
                     ;}
@@ -8031,7 +8031,7 @@ yyreduce:
   case 338:
 
 /* Line 1455 of yacc.c  */
-#line 2452 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2452 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_masgn(p, (yyvsp[(2) - (3)].nd), 0);
                     ;}
@@ -8040,7 +8040,7 @@ yyreduce:
   case 339:
 
 /* Line 1455 of yacc.c  */
-#line 2458 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2458 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list1((yyvsp[(1) - (1)].nd));
                     ;}
@@ -8049,7 +8049,7 @@ yyreduce:
   case 340:
 
 /* Line 1455 of yacc.c  */
-#line 2462 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2462 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = push((yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -8058,7 +8058,7 @@ yyreduce:
   case 341:
 
 /* Line 1455 of yacc.c  */
-#line 2468 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2468 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list3((yyvsp[(1) - (1)].nd),0,0);
                     ;}
@@ -8067,7 +8067,7 @@ yyreduce:
   case 342:
 
 /* Line 1455 of yacc.c  */
-#line 2472 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2472 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list3((yyvsp[(1) - (4)].nd), new_arg(p, (yyvsp[(4) - (4)].id)), 0);
                     ;}
@@ -8076,7 +8076,7 @@ yyreduce:
   case 343:
 
 /* Line 1455 of yacc.c  */
-#line 2476 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2476 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list3((yyvsp[(1) - (6)].nd), new_arg(p, (yyvsp[(4) - (6)].id)), (yyvsp[(6) - (6)].nd));
                     ;}
@@ -8085,7 +8085,7 @@ yyreduce:
   case 344:
 
 /* Line 1455 of yacc.c  */
-#line 2480 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2480 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list3((yyvsp[(1) - (3)].nd), (node*)-1, 0);
                     ;}
@@ -8094,7 +8094,7 @@ yyreduce:
   case 345:
 
 /* Line 1455 of yacc.c  */
-#line 2484 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2484 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list3((yyvsp[(1) - (5)].nd), (node*)-1, (yyvsp[(5) - (5)].nd));
                     ;}
@@ -8103,7 +8103,7 @@ yyreduce:
   case 346:
 
 /* Line 1455 of yacc.c  */
-#line 2488 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2488 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list3(0, new_arg(p, (yyvsp[(2) - (2)].id)), 0);
                     ;}
@@ -8112,7 +8112,7 @@ yyreduce:
   case 347:
 
 /* Line 1455 of yacc.c  */
-#line 2492 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2492 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list3(0, new_arg(p, (yyvsp[(2) - (4)].id)), (yyvsp[(4) - (4)].nd));
                     ;}
@@ -8121,7 +8121,7 @@ yyreduce:
   case 348:
 
 /* Line 1455 of yacc.c  */
-#line 2496 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2496 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list3(0, (node*)-1, 0);
                     ;}
@@ -8130,7 +8130,7 @@ yyreduce:
   case 349:
 
 /* Line 1455 of yacc.c  */
-#line 2500 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2500 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list3(0, (node*)-1, (yyvsp[(3) - (3)].nd));
                     ;}
@@ -8139,7 +8139,7 @@ yyreduce:
   case 350:
 
 /* Line 1455 of yacc.c  */
-#line 2506 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2506 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args_tail(p, (yyvsp[(1) - (4)].nd), (yyvsp[(3) - (4)].nd), (yyvsp[(4) - (4)].id));
                     ;}
@@ -8148,7 +8148,7 @@ yyreduce:
   case 351:
 
 /* Line 1455 of yacc.c  */
-#line 2510 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2510 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args_tail(p, (yyvsp[(1) - (2)].nd), 0, (yyvsp[(2) - (2)].id));
                     ;}
@@ -8157,7 +8157,7 @@ yyreduce:
   case 352:
 
 /* Line 1455 of yacc.c  */
-#line 2514 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2514 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args_tail(p, 0, (yyvsp[(1) - (2)].nd), (yyvsp[(2) - (2)].id));
                     ;}
@@ -8166,7 +8166,7 @@ yyreduce:
   case 353:
 
 /* Line 1455 of yacc.c  */
-#line 2518 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2518 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args_tail(p, 0, 0, (yyvsp[(1) - (1)].id));
                     ;}
@@ -8175,7 +8175,7 @@ yyreduce:
   case 354:
 
 /* Line 1455 of yacc.c  */
-#line 2524 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2524 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(2) - (2)].nd);
                     ;}
@@ -8184,7 +8184,7 @@ yyreduce:
   case 355:
 
 /* Line 1455 of yacc.c  */
-#line 2528 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2528 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args_tail(p, 0, 0, 0);
                     ;}
@@ -8193,7 +8193,7 @@ yyreduce:
   case 356:
 
 /* Line 1455 of yacc.c  */
-#line 2534 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2534 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, (yyvsp[(1) - (6)].nd), (yyvsp[(3) - (6)].nd), (yyvsp[(5) - (6)].id), 0, (yyvsp[(6) - (6)].nd));
                     ;}
@@ -8202,7 +8202,7 @@ yyreduce:
   case 357:
 
 /* Line 1455 of yacc.c  */
-#line 2538 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2538 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, (yyvsp[(1) - (8)].nd), (yyvsp[(3) - (8)].nd), (yyvsp[(5) - (8)].id), (yyvsp[(7) - (8)].nd), (yyvsp[(8) - (8)].nd));
                     ;}
@@ -8211,7 +8211,7 @@ yyreduce:
   case 358:
 
 /* Line 1455 of yacc.c  */
-#line 2542 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2542 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, (yyvsp[(1) - (4)].nd), (yyvsp[(3) - (4)].nd), 0, 0, (yyvsp[(4) - (4)].nd));
                     ;}
@@ -8220,7 +8220,7 @@ yyreduce:
   case 359:
 
 /* Line 1455 of yacc.c  */
-#line 2546 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2546 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, (yyvsp[(1) - (6)].nd), (yyvsp[(3) - (6)].nd), 0, (yyvsp[(5) - (6)].nd), (yyvsp[(6) - (6)].nd));
                     ;}
@@ -8229,7 +8229,7 @@ yyreduce:
   case 360:
 
 /* Line 1455 of yacc.c  */
-#line 2550 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2550 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, (yyvsp[(1) - (4)].nd), 0, (yyvsp[(3) - (4)].id), 0, (yyvsp[(4) - (4)].nd));
                     ;}
@@ -8238,7 +8238,7 @@ yyreduce:
   case 361:
 
 /* Line 1455 of yacc.c  */
-#line 2554 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2554 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, (yyvsp[(1) - (2)].nd), 0, 0, 0, 0);
                     ;}
@@ -8247,7 +8247,7 @@ yyreduce:
   case 362:
 
 /* Line 1455 of yacc.c  */
-#line 2558 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2558 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, (yyvsp[(1) - (6)].nd), 0, (yyvsp[(3) - (6)].id), (yyvsp[(5) - (6)].nd), (yyvsp[(6) - (6)].nd));
                     ;}
@@ -8256,7 +8256,7 @@ yyreduce:
   case 363:
 
 /* Line 1455 of yacc.c  */
-#line 2562 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2562 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, (yyvsp[(1) - (2)].nd), 0, 0, 0, (yyvsp[(2) - (2)].nd));
                     ;}
@@ -8265,7 +8265,7 @@ yyreduce:
   case 364:
 
 /* Line 1455 of yacc.c  */
-#line 2566 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2566 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, 0, (yyvsp[(1) - (4)].nd), (yyvsp[(3) - (4)].id), 0, (yyvsp[(4) - (4)].nd));
                     ;}
@@ -8274,7 +8274,7 @@ yyreduce:
   case 365:
 
 /* Line 1455 of yacc.c  */
-#line 2570 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2570 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, 0, (yyvsp[(1) - (6)].nd), (yyvsp[(3) - (6)].id), (yyvsp[(5) - (6)].nd), (yyvsp[(6) - (6)].nd));
                     ;}
@@ -8283,7 +8283,7 @@ yyreduce:
   case 366:
 
 /* Line 1455 of yacc.c  */
-#line 2574 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2574 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, 0, (yyvsp[(1) - (2)].nd), 0, 0, (yyvsp[(2) - (2)].nd));
                     ;}
@@ -8292,7 +8292,7 @@ yyreduce:
   case 367:
 
 /* Line 1455 of yacc.c  */
-#line 2578 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2578 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, 0, (yyvsp[(1) - (4)].nd), 0, (yyvsp[(3) - (4)].nd), (yyvsp[(4) - (4)].nd));
                     ;}
@@ -8301,7 +8301,7 @@ yyreduce:
   case 368:
 
 /* Line 1455 of yacc.c  */
-#line 2582 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2582 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, 0, 0, (yyvsp[(1) - (2)].id), 0, (yyvsp[(2) - (2)].nd));
                     ;}
@@ -8310,7 +8310,7 @@ yyreduce:
   case 369:
 
 /* Line 1455 of yacc.c  */
-#line 2586 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2586 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, 0, 0, (yyvsp[(1) - (4)].id), (yyvsp[(3) - (4)].nd), (yyvsp[(4) - (4)].nd));
                     ;}
@@ -8319,7 +8319,7 @@ yyreduce:
   case 370:
 
 /* Line 1455 of yacc.c  */
-#line 2590 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2590 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, 0, 0, 0, 0, (yyvsp[(1) - (1)].nd));
                     ;}
@@ -8328,7 +8328,7 @@ yyreduce:
   case 372:
 
 /* Line 1455 of yacc.c  */
-#line 2597 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2597 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       p->cmd_start = TRUE;
                       (yyval.nd) = (yyvsp[(1) - (1)].nd);
@@ -8338,7 +8338,7 @@ yyreduce:
   case 373:
 
 /* Line 1455 of yacc.c  */
-#line 2604 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2604 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = 0;
                     ;}
@@ -8347,7 +8347,7 @@ yyreduce:
   case 374:
 
 /* Line 1455 of yacc.c  */
-#line 2608 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2608 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = 0;
                     ;}
@@ -8356,7 +8356,7 @@ yyreduce:
   case 375:
 
 /* Line 1455 of yacc.c  */
-#line 2612 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2612 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(2) - (4)].nd);
                     ;}
@@ -8365,7 +8365,7 @@ yyreduce:
   case 376:
 
 /* Line 1455 of yacc.c  */
-#line 2619 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2619 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = 0;
                     ;}
@@ -8374,7 +8374,7 @@ yyreduce:
   case 377:
 
 /* Line 1455 of yacc.c  */
-#line 2623 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2623 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = 0;
                     ;}
@@ -8383,7 +8383,7 @@ yyreduce:
   case 380:
 
 /* Line 1455 of yacc.c  */
-#line 2633 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2633 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       local_add_f(p, (yyvsp[(1) - (1)].id));
                       new_bv(p, (yyvsp[(1) - (1)].id));
@@ -8393,7 +8393,7 @@ yyreduce:
   case 382:
 
 /* Line 1455 of yacc.c  */
-#line 2641 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2641 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(2) - (4)].nd);
                     ;}
@@ -8402,7 +8402,7 @@ yyreduce:
   case 383:
 
 /* Line 1455 of yacc.c  */
-#line 2645 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2645 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(1) - (1)].nd);
                     ;}
@@ -8411,7 +8411,7 @@ yyreduce:
   case 384:
 
 /* Line 1455 of yacc.c  */
-#line 2651 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2651 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(2) - (3)].nd);
                     ;}
@@ -8420,7 +8420,7 @@ yyreduce:
   case 385:
 
 /* Line 1455 of yacc.c  */
-#line 2655 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2655 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(2) - (3)].nd);
                     ;}
@@ -8429,7 +8429,7 @@ yyreduce:
   case 386:
 
 /* Line 1455 of yacc.c  */
-#line 2661 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2661 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       local_nest(p);
                     ;}
@@ -8438,7 +8438,7 @@ yyreduce:
   case 387:
 
 /* Line 1455 of yacc.c  */
-#line 2667 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2667 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_block(p,(yyvsp[(3) - (5)].nd),(yyvsp[(4) - (5)].nd));
                       local_unnest(p);
@@ -8448,7 +8448,7 @@ yyreduce:
   case 388:
 
 /* Line 1455 of yacc.c  */
-#line 2674 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2674 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       if ((yyvsp[(1) - (2)].nd)->car == (node*)NODE_YIELD) {
                         yyerror(p, "block given to yield");
@@ -8463,7 +8463,7 @@ yyreduce:
   case 389:
 
 /* Line 1455 of yacc.c  */
-#line 2684 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2684 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_call(p, (yyvsp[(1) - (4)].nd), (yyvsp[(3) - (4)].id), (yyvsp[(4) - (4)].nd), (yyvsp[(2) - (4)].num));
                     ;}
@@ -8472,7 +8472,7 @@ yyreduce:
   case 390:
 
 /* Line 1455 of yacc.c  */
-#line 2688 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2688 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_call(p, (yyvsp[(1) - (5)].nd), (yyvsp[(3) - (5)].id), (yyvsp[(4) - (5)].nd), (yyvsp[(2) - (5)].num));
                       call_with_block(p, (yyval.nd), (yyvsp[(5) - (5)].nd));
@@ -8482,7 +8482,7 @@ yyreduce:
   case 391:
 
 /* Line 1455 of yacc.c  */
-#line 2693 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2693 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_call(p, (yyvsp[(1) - (5)].nd), (yyvsp[(3) - (5)].id), (yyvsp[(4) - (5)].nd), (yyvsp[(2) - (5)].num));
                       call_with_block(p, (yyval.nd), (yyvsp[(5) - (5)].nd));
@@ -8492,7 +8492,7 @@ yyreduce:
   case 392:
 
 /* Line 1455 of yacc.c  */
-#line 2700 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2700 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_fcall(p, (yyvsp[(1) - (2)].id), (yyvsp[(2) - (2)].nd));
                     ;}
@@ -8501,7 +8501,7 @@ yyreduce:
   case 393:
 
 /* Line 1455 of yacc.c  */
-#line 2704 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2704 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_call(p, (yyvsp[(1) - (4)].nd), (yyvsp[(3) - (4)].id), (yyvsp[(4) - (4)].nd), (yyvsp[(2) - (4)].num));
                     ;}
@@ -8510,7 +8510,7 @@ yyreduce:
   case 394:
 
 /* Line 1455 of yacc.c  */
-#line 2708 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2708 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_call(p, (yyvsp[(1) - (4)].nd), (yyvsp[(3) - (4)].id), (yyvsp[(4) - (4)].nd), tCOLON2);
                     ;}
@@ -8519,7 +8519,7 @@ yyreduce:
   case 395:
 
 /* Line 1455 of yacc.c  */
-#line 2712 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2712 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_call(p, (yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].id), 0, tCOLON2);
                     ;}
@@ -8528,7 +8528,7 @@ yyreduce:
   case 396:
 
 /* Line 1455 of yacc.c  */
-#line 2716 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2716 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_call(p, (yyvsp[(1) - (3)].nd), intern("call",4), (yyvsp[(3) - (3)].nd), (yyvsp[(2) - (3)].num));
                     ;}
@@ -8537,7 +8537,7 @@ yyreduce:
   case 397:
 
 /* Line 1455 of yacc.c  */
-#line 2720 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2720 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_call(p, (yyvsp[(1) - (3)].nd), intern("call",4), (yyvsp[(3) - (3)].nd), tCOLON2);
                     ;}
@@ -8546,7 +8546,7 @@ yyreduce:
   case 398:
 
 /* Line 1455 of yacc.c  */
-#line 2724 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2724 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_super(p, (yyvsp[(2) - (2)].nd));
                     ;}
@@ -8555,7 +8555,7 @@ yyreduce:
   case 399:
 
 /* Line 1455 of yacc.c  */
-#line 2728 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2728 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_zsuper(p);
                     ;}
@@ -8564,7 +8564,7 @@ yyreduce:
   case 400:
 
 /* Line 1455 of yacc.c  */
-#line 2732 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2732 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_call(p, (yyvsp[(1) - (4)].nd), intern("[]",2), (yyvsp[(3) - (4)].nd), '.');
                     ;}
@@ -8573,7 +8573,7 @@ yyreduce:
   case 401:
 
 /* Line 1455 of yacc.c  */
-#line 2738 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2738 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       local_nest(p);
                       (yyval.num) = p->lineno;
@@ -8583,7 +8583,7 @@ yyreduce:
   case 402:
 
 /* Line 1455 of yacc.c  */
-#line 2744 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2744 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_block(p,(yyvsp[(3) - (5)].nd),(yyvsp[(4) - (5)].nd));
                       SET_LINENO((yyval.nd), (yyvsp[(2) - (5)].num));
@@ -8594,7 +8594,7 @@ yyreduce:
   case 403:
 
 /* Line 1455 of yacc.c  */
-#line 2750 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2750 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       local_nest(p);
                       (yyval.num) = p->lineno;
@@ -8604,7 +8604,7 @@ yyreduce:
   case 404:
 
 /* Line 1455 of yacc.c  */
-#line 2756 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2756 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_block(p,(yyvsp[(3) - (5)].nd),(yyvsp[(4) - (5)].nd));
                       SET_LINENO((yyval.nd), (yyvsp[(2) - (5)].num));
@@ -8615,7 +8615,7 @@ yyreduce:
   case 405:
 
 /* Line 1455 of yacc.c  */
-#line 2766 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2766 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = cons(cons((yyvsp[(2) - (5)].nd), (yyvsp[(4) - (5)].nd)), (yyvsp[(5) - (5)].nd));
                     ;}
@@ -8624,7 +8624,7 @@ yyreduce:
   case 406:
 
 /* Line 1455 of yacc.c  */
-#line 2772 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2772 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       if ((yyvsp[(1) - (1)].nd)) {
                         (yyval.nd) = cons(cons(0, (yyvsp[(1) - (1)].nd)), 0);
@@ -8638,7 +8638,7 @@ yyreduce:
   case 408:
 
 /* Line 1455 of yacc.c  */
-#line 2786 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2786 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list1(list3((yyvsp[(2) - (6)].nd), (yyvsp[(3) - (6)].nd), (yyvsp[(5) - (6)].nd)));
                       if ((yyvsp[(6) - (6)].nd)) (yyval.nd) = append((yyval.nd), (yyvsp[(6) - (6)].nd));
@@ -8648,7 +8648,7 @@ yyreduce:
   case 410:
 
 /* Line 1455 of yacc.c  */
-#line 2794 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2794 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                         (yyval.nd) = list1((yyvsp[(1) - (1)].nd));
                     ;}
@@ -8657,7 +8657,7 @@ yyreduce:
   case 413:
 
 /* Line 1455 of yacc.c  */
-#line 2802 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2802 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(2) - (2)].nd);
                     ;}
@@ -8666,7 +8666,7 @@ yyreduce:
   case 415:
 
 /* Line 1455 of yacc.c  */
-#line 2809 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2809 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(2) - (2)].nd);
                     ;}
@@ -8675,7 +8675,7 @@ yyreduce:
   case 423:
 
 /* Line 1455 of yacc.c  */
-#line 2824 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2824 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(2) - (2)].nd);
                     ;}
@@ -8684,7 +8684,7 @@ yyreduce:
   case 424:
 
 /* Line 1455 of yacc.c  */
-#line 2828 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2828 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_dstr(p, push((yyvsp[(2) - (3)].nd), (yyvsp[(3) - (3)].nd)));
                     ;}
@@ -8693,7 +8693,7 @@ yyreduce:
   case 426:
 
 /* Line 1455 of yacc.c  */
-#line 2835 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2835 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = append((yyvsp[(1) - (2)].nd), (yyvsp[(2) - (2)].nd));
                     ;}
@@ -8702,7 +8702,7 @@ yyreduce:
   case 427:
 
 /* Line 1455 of yacc.c  */
-#line 2841 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2841 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list1((yyvsp[(1) - (1)].nd));
                     ;}
@@ -8711,7 +8711,7 @@ yyreduce:
   case 428:
 
 /* Line 1455 of yacc.c  */
-#line 2845 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2845 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = p->lex_strterm;
                       p->lex_strterm = NULL;
@@ -8721,7 +8721,7 @@ yyreduce:
   case 429:
 
 /* Line 1455 of yacc.c  */
-#line 2851 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2851 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       p->lex_strterm = (yyvsp[(2) - (4)].nd);
                       (yyval.nd) = list2((yyvsp[(1) - (4)].nd), (yyvsp[(3) - (4)].nd));
@@ -8731,7 +8731,7 @@ yyreduce:
   case 430:
 
 /* Line 1455 of yacc.c  */
-#line 2856 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2856 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list1(new_literal_delim(p));
                     ;}
@@ -8740,7 +8740,7 @@ yyreduce:
   case 431:
 
 /* Line 1455 of yacc.c  */
-#line 2860 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2860 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list1(new_literal_delim(p));
                     ;}
@@ -8749,7 +8749,7 @@ yyreduce:
   case 432:
 
 /* Line 1455 of yacc.c  */
-#line 2866 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2866 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                         (yyval.nd) = (yyvsp[(2) - (2)].nd);
                     ;}
@@ -8758,7 +8758,7 @@ yyreduce:
   case 433:
 
 /* Line 1455 of yacc.c  */
-#line 2870 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2870 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_dxstr(p, push((yyvsp[(2) - (3)].nd), (yyvsp[(3) - (3)].nd)));
                     ;}
@@ -8767,7 +8767,7 @@ yyreduce:
   case 434:
 
 /* Line 1455 of yacc.c  */
-#line 2876 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2876 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                         (yyval.nd) = (yyvsp[(2) - (2)].nd);
                     ;}
@@ -8776,7 +8776,7 @@ yyreduce:
   case 435:
 
 /* Line 1455 of yacc.c  */
-#line 2880 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2880 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_dregx(p, (yyvsp[(2) - (3)].nd), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -8785,7 +8785,7 @@ yyreduce:
   case 439:
 
 /* Line 1455 of yacc.c  */
-#line 2893 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2893 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       parser_heredoc_info * inf = parsing_heredoc_inf(p);
                       inf->doc = push(inf->doc, new_str(p, "", 0));
@@ -8796,7 +8796,7 @@ yyreduce:
   case 440:
 
 /* Line 1455 of yacc.c  */
-#line 2899 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2899 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       heredoc_end(p);
                     ;}
@@ -8805,7 +8805,7 @@ yyreduce:
   case 443:
 
 /* Line 1455 of yacc.c  */
-#line 2909 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2909 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       parser_heredoc_info * inf = parsing_heredoc_inf(p);
                       inf->doc = push(inf->doc, (yyvsp[(1) - (1)].nd));
@@ -8816,7 +8816,7 @@ yyreduce:
   case 444:
 
 /* Line 1455 of yacc.c  */
-#line 2915 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2915 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = p->lex_strterm;
                       p->lex_strterm = NULL;
@@ -8826,7 +8826,7 @@ yyreduce:
   case 445:
 
 /* Line 1455 of yacc.c  */
-#line 2921 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2921 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       parser_heredoc_info * inf = parsing_heredoc_inf(p);
                       p->lex_strterm = (yyvsp[(2) - (4)].nd);
@@ -8837,7 +8837,7 @@ yyreduce:
   case 446:
 
 /* Line 1455 of yacc.c  */
-#line 2929 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2929 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_words(p, list1((yyvsp[(2) - (2)].nd)));
                     ;}
@@ -8846,7 +8846,7 @@ yyreduce:
   case 447:
 
 /* Line 1455 of yacc.c  */
-#line 2933 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2933 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_words(p, push((yyvsp[(2) - (3)].nd), (yyvsp[(3) - (3)].nd)));
                     ;}
@@ -8855,7 +8855,7 @@ yyreduce:
   case 448:
 
 /* Line 1455 of yacc.c  */
-#line 2940 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2940 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       p->lstate = EXPR_ENDARG;
                       (yyval.nd) = new_sym(p, (yyvsp[(1) - (1)].id));
@@ -8865,7 +8865,7 @@ yyreduce:
   case 449:
 
 /* Line 1455 of yacc.c  */
-#line 2945 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2945 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       p->lstate = EXPR_ENDARG;
                       (yyval.nd) = new_dsym(p, new_dstr(p, push((yyvsp[(3) - (4)].nd), (yyvsp[(4) - (4)].nd))));
@@ -8875,7 +8875,7 @@ yyreduce:
   case 450:
 
 /* Line 1455 of yacc.c  */
-#line 2952 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2952 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.id) = (yyvsp[(2) - (2)].id);
                     ;}
@@ -8884,7 +8884,7 @@ yyreduce:
   case 455:
 
 /* Line 1455 of yacc.c  */
-#line 2962 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2962 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.id) = new_strsym(p, (yyvsp[(1) - (1)].nd));
                     ;}
@@ -8893,7 +8893,7 @@ yyreduce:
   case 456:
 
 /* Line 1455 of yacc.c  */
-#line 2966 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2966 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.id) = new_strsym(p, (yyvsp[(2) - (2)].nd));
                     ;}
@@ -8902,7 +8902,7 @@ yyreduce:
   case 457:
 
 /* Line 1455 of yacc.c  */
-#line 2972 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2972 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_symbols(p, list1((yyvsp[(2) - (2)].nd)));
                     ;}
@@ -8911,7 +8911,7 @@ yyreduce:
   case 458:
 
 /* Line 1455 of yacc.c  */
-#line 2976 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2976 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_symbols(p, push((yyvsp[(2) - (3)].nd), (yyvsp[(3) - (3)].nd)));
                     ;}
@@ -8920,7 +8920,7 @@ yyreduce:
   case 461:
 
 /* Line 1455 of yacc.c  */
-#line 2984 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2984 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = negate_lit(p, (yyvsp[(2) - (2)].nd));
                     ;}
@@ -8929,7 +8929,7 @@ yyreduce:
   case 462:
 
 /* Line 1455 of yacc.c  */
-#line 2988 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2988 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = negate_lit(p, (yyvsp[(2) - (2)].nd));
                     ;}
@@ -8938,7 +8938,7 @@ yyreduce:
   case 463:
 
 /* Line 1455 of yacc.c  */
-#line 2994 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2994 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_lvar(p, (yyvsp[(1) - (1)].id));
                     ;}
@@ -8947,7 +8947,7 @@ yyreduce:
   case 464:
 
 /* Line 1455 of yacc.c  */
-#line 2998 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 2998 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_ivar(p, (yyvsp[(1) - (1)].id));
                     ;}
@@ -8956,7 +8956,7 @@ yyreduce:
   case 465:
 
 /* Line 1455 of yacc.c  */
-#line 3002 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3002 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_gvar(p, (yyvsp[(1) - (1)].id));
                     ;}
@@ -8965,7 +8965,7 @@ yyreduce:
   case 466:
 
 /* Line 1455 of yacc.c  */
-#line 3006 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3006 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_cvar(p, (yyvsp[(1) - (1)].id));
                     ;}
@@ -8974,7 +8974,7 @@ yyreduce:
   case 467:
 
 /* Line 1455 of yacc.c  */
-#line 3010 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3010 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_const(p, (yyvsp[(1) - (1)].id));
                     ;}
@@ -8983,7 +8983,7 @@ yyreduce:
   case 468:
 
 /* Line 1455 of yacc.c  */
-#line 3016 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3016 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       assignable(p, (yyvsp[(1) - (1)].nd));
                     ;}
@@ -8992,7 +8992,7 @@ yyreduce:
   case 469:
 
 /* Line 1455 of yacc.c  */
-#line 3022 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3022 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = var_reference(p, (yyvsp[(1) - (1)].nd));
                     ;}
@@ -9001,7 +9001,7 @@ yyreduce:
   case 470:
 
 /* Line 1455 of yacc.c  */
-#line 3026 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3026 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_nil(p);
                     ;}
@@ -9010,7 +9010,7 @@ yyreduce:
   case 471:
 
 /* Line 1455 of yacc.c  */
-#line 3030 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3030 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_self(p);
                     ;}
@@ -9019,7 +9019,7 @@ yyreduce:
   case 472:
 
 /* Line 1455 of yacc.c  */
-#line 3034 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3034 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_true(p);
                     ;}
@@ -9028,7 +9028,7 @@ yyreduce:
   case 473:
 
 /* Line 1455 of yacc.c  */
-#line 3038 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3038 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_false(p);
                     ;}
@@ -9037,7 +9037,7 @@ yyreduce:
   case 474:
 
 /* Line 1455 of yacc.c  */
-#line 3042 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3042 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       const char *fn = p->filename;
                       if (!fn) {
@@ -9050,7 +9050,7 @@ yyreduce:
   case 475:
 
 /* Line 1455 of yacc.c  */
-#line 3050 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3050 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       char buf[16];
 
@@ -9062,7 +9062,7 @@ yyreduce:
   case 476:
 
 /* Line 1455 of yacc.c  */
-#line 3057 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3057 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
 #ifdef MRB_UTF8_STRING
                       const char *enc = "UTF-8";
@@ -9076,7 +9076,7 @@ yyreduce:
   case 479:
 
 /* Line 1455 of yacc.c  */
-#line 3072 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3072 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = 0;
                     ;}
@@ -9085,7 +9085,7 @@ yyreduce:
   case 480:
 
 /* Line 1455 of yacc.c  */
-#line 3076 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3076 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       p->lstate = EXPR_BEG;
                       p->cmd_start = TRUE;
@@ -9095,7 +9095,7 @@ yyreduce:
   case 481:
 
 /* Line 1455 of yacc.c  */
-#line 3081 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3081 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(3) - (4)].nd);
                     ;}
@@ -9104,7 +9104,7 @@ yyreduce:
   case 482:
 
 /* Line 1455 of yacc.c  */
-#line 3092 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3092 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(2) - (3)].nd);
                       p->lstate = EXPR_BEG;
@@ -9115,7 +9115,7 @@ yyreduce:
   case 483:
 
 /* Line 1455 of yacc.c  */
-#line 3098 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3098 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(1) - (2)].nd);
                     ;}
@@ -9124,7 +9124,7 @@ yyreduce:
   case 485:
 
 /* Line 1455 of yacc.c  */
-#line 3107 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3107 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       void_expr_error(p, (yyvsp[(2) - (2)].nd));
                       (yyval.nd) = new_kw_arg(p, (yyvsp[(1) - (2)].id), (yyvsp[(2) - (2)].nd));
@@ -9134,7 +9134,7 @@ yyreduce:
   case 486:
 
 /* Line 1455 of yacc.c  */
-#line 3112 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3112 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_kw_arg(p, (yyvsp[(1) - (1)].id), 0);
                     ;}
@@ -9143,7 +9143,7 @@ yyreduce:
   case 487:
 
 /* Line 1455 of yacc.c  */
-#line 3118 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3118 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_kw_arg(p, (yyvsp[(1) - (2)].id), (yyvsp[(2) - (2)].nd));
                     ;}
@@ -9152,7 +9152,7 @@ yyreduce:
   case 488:
 
 /* Line 1455 of yacc.c  */
-#line 3122 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3122 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_kw_arg(p, (yyvsp[(1) - (1)].id), 0);
                     ;}
@@ -9161,7 +9161,7 @@ yyreduce:
   case 489:
 
 /* Line 1455 of yacc.c  */
-#line 3128 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3128 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list1((yyvsp[(1) - (1)].nd));
                     ;}
@@ -9170,7 +9170,7 @@ yyreduce:
   case 490:
 
 /* Line 1455 of yacc.c  */
-#line 3132 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3132 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = push((yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -9179,7 +9179,7 @@ yyreduce:
   case 491:
 
 /* Line 1455 of yacc.c  */
-#line 3138 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3138 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list1((yyvsp[(1) - (1)].nd));
                     ;}
@@ -9188,7 +9188,7 @@ yyreduce:
   case 492:
 
 /* Line 1455 of yacc.c  */
-#line 3142 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3142 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = push((yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -9197,7 +9197,7 @@ yyreduce:
   case 495:
 
 /* Line 1455 of yacc.c  */
-#line 3152 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3152 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = cons((node*)NODE_KW_REST_ARGS, nsym((yyvsp[(2) - (2)].id)));
                     ;}
@@ -9206,7 +9206,7 @@ yyreduce:
   case 496:
 
 /* Line 1455 of yacc.c  */
-#line 3156 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3156 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = cons((node*)NODE_KW_REST_ARGS, 0);
                     ;}
@@ -9215,7 +9215,7 @@ yyreduce:
   case 497:
 
 /* Line 1455 of yacc.c  */
-#line 3162 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3162 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args_tail(p, (yyvsp[(1) - (4)].nd), (yyvsp[(3) - (4)].nd), (yyvsp[(4) - (4)].id));
                     ;}
@@ -9224,7 +9224,7 @@ yyreduce:
   case 498:
 
 /* Line 1455 of yacc.c  */
-#line 3166 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3166 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args_tail(p, (yyvsp[(1) - (2)].nd), 0, (yyvsp[(2) - (2)].id));
                     ;}
@@ -9233,7 +9233,7 @@ yyreduce:
   case 499:
 
 /* Line 1455 of yacc.c  */
-#line 3170 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3170 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args_tail(p, 0, (yyvsp[(1) - (2)].nd), (yyvsp[(2) - (2)].id));
                     ;}
@@ -9242,7 +9242,7 @@ yyreduce:
   case 500:
 
 /* Line 1455 of yacc.c  */
-#line 3174 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3174 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args_tail(p, 0, 0, (yyvsp[(1) - (1)].id));
                     ;}
@@ -9251,7 +9251,7 @@ yyreduce:
   case 501:
 
 /* Line 1455 of yacc.c  */
-#line 3180 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3180 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(2) - (2)].nd);
                     ;}
@@ -9260,7 +9260,7 @@ yyreduce:
   case 502:
 
 /* Line 1455 of yacc.c  */
-#line 3184 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3184 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args_tail(p, 0, 0, 0);
                     ;}
@@ -9269,7 +9269,7 @@ yyreduce:
   case 503:
 
 /* Line 1455 of yacc.c  */
-#line 3190 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3190 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, (yyvsp[(1) - (6)].nd), (yyvsp[(3) - (6)].nd), (yyvsp[(5) - (6)].id), 0, (yyvsp[(6) - (6)].nd));
                     ;}
@@ -9278,7 +9278,7 @@ yyreduce:
   case 504:
 
 /* Line 1455 of yacc.c  */
-#line 3194 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3194 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, (yyvsp[(1) - (8)].nd), (yyvsp[(3) - (8)].nd), (yyvsp[(5) - (8)].id), (yyvsp[(7) - (8)].nd), (yyvsp[(8) - (8)].nd));
                     ;}
@@ -9287,7 +9287,7 @@ yyreduce:
   case 505:
 
 /* Line 1455 of yacc.c  */
-#line 3198 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3198 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, (yyvsp[(1) - (4)].nd), (yyvsp[(3) - (4)].nd), 0, 0, (yyvsp[(4) - (4)].nd));
                     ;}
@@ -9296,7 +9296,7 @@ yyreduce:
   case 506:
 
 /* Line 1455 of yacc.c  */
-#line 3202 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3202 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, (yyvsp[(1) - (6)].nd), (yyvsp[(3) - (6)].nd), 0, (yyvsp[(5) - (6)].nd), (yyvsp[(6) - (6)].nd));
                     ;}
@@ -9305,7 +9305,7 @@ yyreduce:
   case 507:
 
 /* Line 1455 of yacc.c  */
-#line 3206 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3206 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, (yyvsp[(1) - (4)].nd), 0, (yyvsp[(3) - (4)].id), 0, (yyvsp[(4) - (4)].nd));
                     ;}
@@ -9314,7 +9314,7 @@ yyreduce:
   case 508:
 
 /* Line 1455 of yacc.c  */
-#line 3210 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3210 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, (yyvsp[(1) - (6)].nd), 0, (yyvsp[(3) - (6)].id), (yyvsp[(5) - (6)].nd), (yyvsp[(6) - (6)].nd));
                     ;}
@@ -9323,7 +9323,7 @@ yyreduce:
   case 509:
 
 /* Line 1455 of yacc.c  */
-#line 3214 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3214 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, (yyvsp[(1) - (2)].nd), 0, 0, 0, (yyvsp[(2) - (2)].nd));
                     ;}
@@ -9332,7 +9332,7 @@ yyreduce:
   case 510:
 
 /* Line 1455 of yacc.c  */
-#line 3218 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3218 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, 0, (yyvsp[(1) - (4)].nd), (yyvsp[(3) - (4)].id), 0, (yyvsp[(4) - (4)].nd));
                     ;}
@@ -9341,7 +9341,7 @@ yyreduce:
   case 511:
 
 /* Line 1455 of yacc.c  */
-#line 3222 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3222 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, 0, (yyvsp[(1) - (6)].nd), (yyvsp[(3) - (6)].id), (yyvsp[(5) - (6)].nd), (yyvsp[(6) - (6)].nd));
                     ;}
@@ -9350,7 +9350,7 @@ yyreduce:
   case 512:
 
 /* Line 1455 of yacc.c  */
-#line 3226 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3226 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, 0, (yyvsp[(1) - (2)].nd), 0, 0, (yyvsp[(2) - (2)].nd));
                     ;}
@@ -9359,7 +9359,7 @@ yyreduce:
   case 513:
 
 /* Line 1455 of yacc.c  */
-#line 3230 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3230 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, 0, (yyvsp[(1) - (4)].nd), 0, (yyvsp[(3) - (4)].nd), (yyvsp[(4) - (4)].nd));
                     ;}
@@ -9368,7 +9368,7 @@ yyreduce:
   case 514:
 
 /* Line 1455 of yacc.c  */
-#line 3234 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3234 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, 0, 0, (yyvsp[(1) - (2)].id), 0, (yyvsp[(2) - (2)].nd));
                     ;}
@@ -9377,7 +9377,7 @@ yyreduce:
   case 515:
 
 /* Line 1455 of yacc.c  */
-#line 3238 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3238 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, 0, 0, (yyvsp[(1) - (4)].id), (yyvsp[(3) - (4)].nd), (yyvsp[(4) - (4)].nd));
                     ;}
@@ -9386,7 +9386,7 @@ yyreduce:
   case 516:
 
 /* Line 1455 of yacc.c  */
-#line 3242 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3242 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_args(p, 0, 0, 0, 0, (yyvsp[(1) - (1)].nd));
                     ;}
@@ -9395,7 +9395,7 @@ yyreduce:
   case 517:
 
 /* Line 1455 of yacc.c  */
-#line 3246 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3246 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       local_add_f(p, mrb_intern_lit(p->mrb, "&"));
                       (yyval.nd) = new_args(p, 0, 0, 0, 0, 0);
@@ -9405,7 +9405,7 @@ yyreduce:
   case 518:
 
 /* Line 1455 of yacc.c  */
-#line 3253 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3253 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       yyerror(p, "formal argument cannot be a constant");
                       (yyval.nd) = 0;
@@ -9415,7 +9415,7 @@ yyreduce:
   case 519:
 
 /* Line 1455 of yacc.c  */
-#line 3258 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3258 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       yyerror(p, "formal argument cannot be an instance variable");
                       (yyval.nd) = 0;
@@ -9425,7 +9425,7 @@ yyreduce:
   case 520:
 
 /* Line 1455 of yacc.c  */
-#line 3263 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3263 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       yyerror(p, "formal argument cannot be a global variable");
                       (yyval.nd) = 0;
@@ -9435,7 +9435,7 @@ yyreduce:
   case 521:
 
 /* Line 1455 of yacc.c  */
-#line 3268 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3268 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       yyerror(p, "formal argument cannot be a class variable");
                       (yyval.nd) = 0;
@@ -9445,7 +9445,7 @@ yyreduce:
   case 522:
 
 /* Line 1455 of yacc.c  */
-#line 3275 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3275 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.id) = 0;
                     ;}
@@ -9454,7 +9454,7 @@ yyreduce:
   case 523:
 
 /* Line 1455 of yacc.c  */
-#line 3279 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3279 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       local_add_f(p, (yyvsp[(1) - (1)].id));
                       (yyval.id) = (yyvsp[(1) - (1)].id);
@@ -9464,7 +9464,7 @@ yyreduce:
   case 524:
 
 /* Line 1455 of yacc.c  */
-#line 3286 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3286 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_arg(p, (yyvsp[(1) - (1)].id));
                     ;}
@@ -9473,7 +9473,7 @@ yyreduce:
   case 525:
 
 /* Line 1455 of yacc.c  */
-#line 3290 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3290 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = new_masgn(p, (yyvsp[(2) - (3)].nd), 0);
                     ;}
@@ -9482,7 +9482,7 @@ yyreduce:
   case 526:
 
 /* Line 1455 of yacc.c  */
-#line 3296 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3296 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list1((yyvsp[(1) - (1)].nd));
                     ;}
@@ -9491,7 +9491,7 @@ yyreduce:
   case 527:
 
 /* Line 1455 of yacc.c  */
-#line 3300 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3300 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = push((yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -9500,7 +9500,7 @@ yyreduce:
   case 528:
 
 /* Line 1455 of yacc.c  */
-#line 3306 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3306 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       local_add_f(p, (yyvsp[(1) - (2)].id));
                       (yyval.id) = (yyvsp[(1) - (2)].id);
@@ -9510,7 +9510,7 @@ yyreduce:
   case 529:
 
 /* Line 1455 of yacc.c  */
-#line 3313 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3313 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       void_expr_error(p, (yyvsp[(2) - (2)].nd));
                       (yyval.nd) = cons(nsym((yyvsp[(1) - (2)].id)), (yyvsp[(2) - (2)].nd));
@@ -9520,7 +9520,7 @@ yyreduce:
   case 530:
 
 /* Line 1455 of yacc.c  */
-#line 3320 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3320 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       void_expr_error(p, (yyvsp[(2) - (2)].nd));
                       (yyval.nd) = cons(nsym((yyvsp[(1) - (2)].id)), (yyvsp[(2) - (2)].nd));
@@ -9530,7 +9530,7 @@ yyreduce:
   case 531:
 
 /* Line 1455 of yacc.c  */
-#line 3327 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3327 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list1((yyvsp[(1) - (1)].nd));
                     ;}
@@ -9539,7 +9539,7 @@ yyreduce:
   case 532:
 
 /* Line 1455 of yacc.c  */
-#line 3331 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3331 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = push((yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -9548,7 +9548,7 @@ yyreduce:
   case 533:
 
 /* Line 1455 of yacc.c  */
-#line 3337 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3337 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list1((yyvsp[(1) - (1)].nd));
                     ;}
@@ -9557,7 +9557,7 @@ yyreduce:
   case 534:
 
 /* Line 1455 of yacc.c  */
-#line 3341 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3341 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = push((yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -9566,7 +9566,7 @@ yyreduce:
   case 537:
 
 /* Line 1455 of yacc.c  */
-#line 3351 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3351 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       local_add_f(p, (yyvsp[(2) - (2)].id));
                       (yyval.id) = (yyvsp[(2) - (2)].id);
@@ -9576,7 +9576,7 @@ yyreduce:
   case 538:
 
 /* Line 1455 of yacc.c  */
-#line 3356 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3356 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       local_add_f(p, mrb_intern_lit(p->mrb, "*"));
                       (yyval.id) = -1;
@@ -9586,7 +9586,7 @@ yyreduce:
   case 541:
 
 /* Line 1455 of yacc.c  */
-#line 3367 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3367 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.id) = (yyvsp[(2) - (2)].id);
                     ;}
@@ -9595,7 +9595,7 @@ yyreduce:
   case 542:
 
 /* Line 1455 of yacc.c  */
-#line 3373 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3373 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.id) = (yyvsp[(2) - (2)].id);
                     ;}
@@ -9604,7 +9604,7 @@ yyreduce:
   case 543:
 
 /* Line 1455 of yacc.c  */
-#line 3377 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3377 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.id) = 0;
                     ;}
@@ -9613,7 +9613,7 @@ yyreduce:
   case 544:
 
 /* Line 1455 of yacc.c  */
-#line 3383 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3383 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(1) - (1)].nd);
                       if (!(yyval.nd)) (yyval.nd) = new_nil(p);
@@ -9623,14 +9623,14 @@ yyreduce:
   case 545:
 
 /* Line 1455 of yacc.c  */
-#line 3387 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3387 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {p->lstate = EXPR_BEG;;}
     break;
 
   case 546:
 
 /* Line 1455 of yacc.c  */
-#line 3388 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3388 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       if ((yyvsp[(3) - (4)].nd) == 0) {
                         yyerror(p, "can't define singleton method for ().");
@@ -9658,7 +9658,7 @@ yyreduce:
   case 548:
 
 /* Line 1455 of yacc.c  */
-#line 3414 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3414 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = (yyvsp[(1) - (2)].nd);
                     ;}
@@ -9667,7 +9667,7 @@ yyreduce:
   case 549:
 
 /* Line 1455 of yacc.c  */
-#line 3420 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3420 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = list1((yyvsp[(1) - (1)].nd));
                       NODE_LINENO((yyval.nd), (yyvsp[(1) - (1)].nd));
@@ -9677,7 +9677,7 @@ yyreduce:
   case 550:
 
 /* Line 1455 of yacc.c  */
-#line 3425 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3425 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = push((yyvsp[(1) - (3)].nd), (yyvsp[(3) - (3)].nd));
                     ;}
@@ -9686,7 +9686,7 @@ yyreduce:
   case 551:
 
 /* Line 1455 of yacc.c  */
-#line 3431 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3431 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       void_expr_error(p, (yyvsp[(1) - (3)].nd));
                       void_expr_error(p, (yyvsp[(3) - (3)].nd));
@@ -9697,7 +9697,7 @@ yyreduce:
   case 552:
 
 /* Line 1455 of yacc.c  */
-#line 3437 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3437 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       void_expr_error(p, (yyvsp[(3) - (3)].nd));
                       (yyval.nd) = cons(new_sym(p, (yyvsp[(1) - (3)].id)), (yyvsp[(3) - (3)].nd));
@@ -9707,7 +9707,7 @@ yyreduce:
   case 553:
 
 /* Line 1455 of yacc.c  */
-#line 3442 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3442 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       void_expr_error(p, (yyvsp[(3) - (3)].nd));
                       if ((yyvsp[(1) - (3)].nd)->car == (node*)NODE_DSTR) {
@@ -9722,7 +9722,7 @@ yyreduce:
   case 554:
 
 /* Line 1455 of yacc.c  */
-#line 3452 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3452 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       void_expr_error(p, (yyvsp[(2) - (2)].nd));
                       (yyval.nd) = cons(cons((node*)NODE_KW_REST_ARGS, 0), (yyvsp[(2) - (2)].nd));
@@ -9732,7 +9732,7 @@ yyreduce:
   case 567:
 
 /* Line 1455 of yacc.c  */
-#line 3479 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3479 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.num) = '.';
                     ;}
@@ -9741,7 +9741,7 @@ yyreduce:
   case 568:
 
 /* Line 1455 of yacc.c  */
-#line 3483 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3483 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.num) = 0;
                     ;}
@@ -9750,7 +9750,7 @@ yyreduce:
   case 570:
 
 /* Line 1455 of yacc.c  */
-#line 3490 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3490 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.num) = tCOLON2;
                     ;}
@@ -9759,14 +9759,14 @@ yyreduce:
   case 580:
 
 /* Line 1455 of yacc.c  */
-#line 3514 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3514 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {yyerrok;;}
     break;
 
   case 583:
 
 /* Line 1455 of yacc.c  */
-#line 3520 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3520 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       p->lineno++;
                       p->column = 0;
@@ -9776,7 +9776,7 @@ yyreduce:
   case 586:
 
 /* Line 1455 of yacc.c  */
-#line 3531 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3531 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
     {
                       (yyval.nd) = 0;
                     ;}
@@ -9785,7 +9785,7 @@ yyreduce:
 
 
 /* Line 1455 of yacc.c  */
-#line 9789 "E:/UserData/Programming/Ruby/MRuby/mruby/build/host/mrbgems/mruby-compiler/core/y.tab.c"
+#line 9789 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/build/host/mrbgems/mruby-compiler/core/y.tab.c"
       default: break;
     }
   YY_SYMBOL_PRINT ("-> $$ =", yyr1[yyn], &yyval, &yyloc);
@@ -9997,7 +9997,7 @@ yyreturn:
 
 
 /* Line 1675 of yacc.c  */
-#line 3535 "E:/UserData/Programming/Ruby/MRuby/mruby/mrbgems/mruby-compiler/core/parse.y"
+#line 3535 "E:/UserData/Programming/Ruby/MRuby/fork/mruby/mrbgems/mruby-compiler/core/parse.y"
 
 #define pylval  (*((YYSTYPE*)(p->ylval)))
 
