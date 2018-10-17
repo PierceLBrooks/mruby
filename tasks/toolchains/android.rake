@@ -1,6 +1,9 @@
+
+STATICALLY_LINKABLE = 1
+
 class MRuby::Toolchain::Android
 
-  DEFAULT_ARCH = 'armeabi' # TODO : Revise if arch should have a default
+  DEFAULT_ARCH = 'x86_64' # TODO : Revise if arch should have a default
 
   DEFAULT_TOOLCHAIN = :clang
 
@@ -63,7 +66,11 @@ Set ANDROID_PLATFORM environment variable or set :platform parameter
 
   def bin(command)
     command = command.to_s
-    toolchain_path.join('bin', command).to_s
+    temp = toolchain_path.join('bin', command).to_s
+    if (STATICALLY_LINKABLE === nil)
+      temp += ' -shared '
+	end
+	temp
   end
 
   def home_path
@@ -113,6 +120,7 @@ Set ANDROID_PLATFORM environment variable or set :platform parameter
         end
 
       gcc_toolchain_version = Dir[home_path.join('toolchains', test)].map{|t| t.match(/-(\d+\.\d+)$/); $1.to_f }.max
+	  gcc_toolchain_version = 4.9
       @gcc_toolchain_path = home_path.join('toolchains', prefix + gcc_toolchain_version.to_s, 'prebuilt', host_platform)
     end
     @gcc_toolchain_path
@@ -127,6 +135,10 @@ Set ANDROID_PLATFORM environment variable or set :platform parameter
           path = Pathname(item)
           break
         }
+        path = path.to_s
+        if (path[path.length-1] == '*')
+          path = Pathname(path[(0)..(path.length-2)].to_s+'-x86_64')
+        end
         path.basename
       when /x86_64-darwin/i
         'darwin-x86_64'
@@ -264,7 +276,18 @@ Set ANDROID_PLATFORM environment variable or set :platform parameter
     case toolchain
     when :gcc
     when :clang
-      flags += %W(-gcc-toolchain "#{gcc_toolchain_path}" -Wno-invalid-command-line-argument -Wno-unused-command-line-argument)
+      platform_include = case arch
+        when /armeabi/    then 'arm-linux-androideabi'
+        when /arm64-v8a/  then 'aarch64-linux-android'
+        when /x86_64/     then 'x86_64-linux-android'
+        when /x86/        then 'x86-linux-android'
+        when /mips64/     then 'mips64el-linux-android'
+        when /mips/       then 'mipsel-linux-android'
+        end
+      sources_include = home_path.join('sources', 'cxx-stl' , 'llvm-libc++', 'include').to_s
+      sysroot_include = home_path.join('sysroot', 'usr', 'include').to_s
+      platform_include = home_path.join('sysroot', 'usr', 'include', platform_include).to_s
+      flags += %W(-gcc-toolchain "#{gcc_toolchain_path}" -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -I"#{sources_include}" -I"#{sysroot_include}" -I"#{platform_include}")
     end
     flags += %W(-fpic -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes)
 
@@ -315,7 +338,11 @@ MRuby::Toolchain.new(:android) do |conf, params|
     cc.flags = android.cflags
   end
 
-  conf.archiver.command = android.ar
+  if (STATICALLY_LINKABLE === nil)
+    conf.archiver.command = android.cc
+  else
+    conf.archiver.command = android.ar
+  end
   conf.linker.command = android.cc
   conf.linker.flags = android.ldflags
   conf.linker.flags_before_libraries = android.ldflags_before_libraries

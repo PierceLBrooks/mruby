@@ -22,7 +22,6 @@ cscope.out
 tags
 /src/y.tab.c
 /bin
-/build
 /mruby-source-*.gem
 doc/api
 .yardoc

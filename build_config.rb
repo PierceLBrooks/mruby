@@ -1,5 +1,5 @@
+
 MRuby::Build.new do |conf|
-  # load specific toolchain settings
 
   # Gets set by the VS command prompts.
   if ENV['VisualStudioVersion'] || ENV['VSINSTALLDIR']
@@ -7,6 +7,60 @@ MRuby::Build.new do |conf|
   else
     toolchain :gcc
   end
+
+  enable_debug
+
+  conf.cc do |cc|
+    cc.defines = %w(DISABLE_GEMS)
+  end
+end
+
+# Requires Android NDK r13 or later.
+MRuby::CrossBuild.new('android-armeabi-v7a-neon-hard') do |conf|
+  params = {
+    :arch => 'armeabi-v7a',
+    :mfpu => 'neon',
+    :mfloat_abi => 'hard',
+    :platform => 'android-24',
+    :toolchain => :clang,
+  }
+  toolchain :android, params
+
+  conf.cc do |cc|
+    cc.defines = %w(DISABLE_GEMS)
+  end
+end
+
+# Requires Android NDK r13 or later.
+MRuby::CrossBuild.new('android-arm64-v8a') do |conf|
+  params = {
+    :arch => 'arm64-v8a',
+    :platform => 'android-24',
+    :toolchain => :clang,
+  }
+  toolchain :android, params
+
+  conf.cc do |cc|
+    cc.defines = %w(DISABLE_GEMS)
+  end
+end
+
+
+=begin
+MRuby::Build.new do |conf|
+  toolchain :android
+  conf.cc do |cc|
+    cc.defines = %w(DISABLE_GEMS)
+  end
+  
+  # load specific toolchain settings
+
+  # Gets set by the VS command prompts.
+  #if ENV['VisualStudioVersion'] || ENV['VSINSTALLDIR']
+  #  toolchain :visualcpp
+  #else
+  #  toolchain :gcc
+  #end
 
   # Turn on `enable_debug` for better debugging
   # enable_debug
@@ -23,7 +77,7 @@ MRuby::Build.new do |conf|
   # conf.gem :git => 'git@github.com:iij/mruby-io.git', :branch => 'master', :options => '-v'
 
   # include the default GEMs
-  conf.gembox 'default'
+  #conf.gembox 'default'
   # C compiler settings
   # conf.cc do |cc|
   #   cc.command = ENV['CC'] || 'gcc'
@@ -84,7 +138,9 @@ MRuby::Build.new do |conf|
   # bintest
   # conf.enable_bintest
 end
+=end
 
+=begin
 MRuby::Build.new('host-debug') do |conf|
   # load specific toolchain settings
 
@@ -124,6 +180,7 @@ MRuby::Build.new('test') do |conf|
 
   conf.gembox 'default'
 end
+=end
 
 #MRuby::Build.new('bench') do |conf|
 #  # Gets set by the VS command prompts.
